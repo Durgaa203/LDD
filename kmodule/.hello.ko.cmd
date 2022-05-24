@@ -1,0 +1,1 @@
+cmd_/home/kanaka/Desktop/kmodule/hello.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kanaka/Desktop/kmodule/hello.ko /home/kanaka/Desktop/kmodule/hello.o /home/kanaka/Desktop/kmodule/hello.mod.o;  true

@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5333ED">
+
+<!--
+<pre>
+                                                ..                   ▄■▀▀▀▀■
+ ▄██████▄                                   –▀▀▀▀▀ ▀▀––            .▀        ▀
+█▀  ▀████ ░  ████ ███▄ ░███▄ █████▄   ▄█████████▄▄███████████▄ ▄██████▄ ▄██▄ ░
+█    ████ ░ ████ ░████ ░█████ ░████ ░████▀▀▀▀██▀ ░  ████ ░   ████▀     ▀████ ░
+ ▀   █▓▓█ ░█▓▓█ ░ █▓▓█ ░█▓▓█ ░ █▓▓█ ░▓▓█▀ ░   ▀     █▓▓█ ░  █▓▓█ ░      █▓▓█ ░
+ . ┌─█▓▓█ █▓▓█ ░──█▒▒█─░█▒▒█─░─█▒▒█─░▀▒▒▒▒▒▒▒█▄──░──█▒▒█─░─█▒▒█ ░ ──────█▒▒█ ░
+   : █░░█ ░█░░█ ░ █░░█ ░█░░█ ░ █░░█ ░  ▀░░░░░░░█ ░  █░░█ ░ █░░█ ░       █░░█ ░
+   . █..█ ░ █..█ ░█..█ ░█..█ ░ █..█ ░     .  █..█ ░ █..█ ░  █..█ ░      █..█ ░
+   | █  █ ░  █  █ █  █ ░█  █ ░ █  █ ░  ▄▀     █  █ ░█  █▄ ░  █  █▄    ▄██  █ ░
+   └ ▀███ ░───████████ ░███▀ ░─████ ░ ██──────████ ░▀███▓▀ ░  ▀██████▀ ▀██▀ ░
+      ░░░░░      ▀███▀  ░░░░░░ ████ ░ ███▄  ▄████ ░   ░░░░      ░░░░░░   ░░
+           ▄                   ▀███ ░  ▀███████▀          .
+   ┌──────▀▀▀▀ ▀▀─────────────── ██ ──────────────────────▀▀▄▄▄  ▄▄▄──────┐
+   : ░                            ▀█▄    ▄                      ▀▀       ░ :
+   |                                ▀––▀                                   |
+   |        We're building a world-class hosting platform at Kinsta.       |
+   |                                                                       |
+   |        🌎 Remote             🧕 Diverse             💪 Kick-ass      |
+   |                                                                       |
+   |                                                                       |
+   |        https://kinsta.com/careers/                     Join us!       |
+   |                                                                       |
+   |                                                                       |
+   | ░                                                                   ░ |
+   └───────▀▀▀▀ ▀▀───────────────────────────────────────────▀▀ ▀▀─────────┘
+</pre>
+-->
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v17.1.2 (Yoast SEO v17.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>The 40 Most-Used Linux Commands You Should Know</title>
+	<meta name="description" content="Linux is one of the most popular operating systems among professionals. In this article, you&#039;ll learn about the 40 most-used Linux commands." />
+	<link rel="canonical" href="https://kinsta.com/blog/linux-commands/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="The 40 Most-Used Linux Commands You Should Know" />
+	<meta property="og:description" content="As of writing this, Linux has a worldwide market share of 2.68% on desktops, but over 90% of all cloud infrastructure and hosting services run in this" />
+	<meta property="og:url" content="https://kinsta.com/blog/linux-commands/" />
+	<meta property="og:site_name" content="Kinsta®" />
+	<meta property="article:publisher" content="https://www.facebook.com/kinstahosting" />
+	<meta property="article:published_time" content="2021-10-06T12:14:20+00:00" />
+	<meta property="article:modified_time" content="2022-03-28T19:27:41+00:00" />
+	<meta property="og:image" content="https://kinsta.com/wp-content/uploads/2021/09/linux-commands.jpg" />
+	<meta property="og:image:width" content="1460" />
+	<meta property="og:image:height" content="730" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@DaniDiazTech" />
+	<meta name="twitter:site" content="@kinsta" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Daniel Diaz" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="20 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://kinsta.com/#organization","name":"Kinsta","url":"https://kinsta.com/","sameAs":["https://www.facebook.com/kinstahosting","https://www.instagram.com/kinstahosting/","https://www.linkedin.com/company/kinsta/","https://www.youtube.com/c/Kinsta","https://www.pinterest.com/kinstahosting/","https://twitter.com/kinsta"],"logo":{"@type":"ImageObject","@id":"https://kinsta.com/#logo","inLanguage":"en-US","url":"https://kinsta.com/wp-content/uploads/2020/12/kinsta-logo.jpg","contentUrl":"https://kinsta.com/wp-content/uploads/2020/12/kinsta-logo.jpg","width":600,"height":60,"caption":"Kinsta"},"image":{"@id":"https://kinsta.com/#logo"}},{"@type":"WebSite","@id":"https://kinsta.com/#website","url":"https://kinsta.com/","name":"Kinsta\u00ae","description":"Fast, secure, managed WordPress hosting","publisher":{"@id":"https://kinsta.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://kinsta.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://kinsta.com/blog/linux-commands/#primaryimage","inLanguage":"en-US","url":"https://kinsta.com/wp-content/uploads/2021/09/linux-commands.jpg","contentUrl":"https://kinsta.com/wp-content/uploads/2021/09/linux-commands.jpg","width":1460,"height":730,"caption":"Linux commands"},{"@type":"WebPage","@id":"https://kinsta.com/blog/linux-commands/#webpage","url":"https://kinsta.com/blog/linux-commands/","name":"The 40 Most-Used Linux Commands You Should Know","isPartOf":{"@id":"https://kinsta.com/#website"},"primaryImageOfPage":{"@id":"https://kinsta.com/blog/linux-commands/#primaryimage"},"datePublished":"2021-10-06T12:14:20+00:00","dateModified":"2022-03-28T19:27:41+00:00","description":"Linux is one of the most popular operating systems among professionals. In this article, you'll learn about the 40 most-used Linux commands.","breadcrumb":{"@id":"https://kinsta.com/blog/linux-commands/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://kinsta.com/blog/linux-commands/"]}]},{"@type":"BreadcrumbList","@id":"https://kinsta.com/blog/linux-commands/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kinsta.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://kinsta.com/blog/"},{"@type":"ListItem","position":3,"name":"The 40 Most-Used Linux Commands You Should Know"}]},{"@type":"Article","@id":"https://kinsta.com/blog/linux-commands/#article","isPartOf":{"@id":"https://kinsta.com/blog/linux-commands/#webpage"},"author":{"@id":"https://kinsta.com/#/schema/person/6e27020d85cad746e82ebc7615d520e9"},"headline":"The 40 Most-Used Linux Commands You Should Know","datePublished":"2021-10-06T12:14:20+00:00","dateModified":"2022-03-28T19:27:41+00:00","mainEntityOfPage":{"@id":"https://kinsta.com/blog/linux-commands/#webpage"},"wordCount":3080,"commentCount":1,"publisher":{"@id":"https://kinsta.com/#organization"},"image":{"@id":"https://kinsta.com/blog/linux-commands/#primaryimage"},"thumbnailUrl":"https://kinsta.com/wp-content/uploads/2021/09/linux-commands.jpg","keywords":["Linux","web development"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://kinsta.com/blog/linux-commands/#respond"]}]},{"@type":"Person","@id":"https://kinsta.com/#/schema/person/6e27020d85cad746e82ebc7615d520e9","name":"Daniel Diaz","image":{"@type":"ImageObject","@id":"https://kinsta.com/#personlogo","inLanguage":"en-US","url":"https://kinsta.com/avatar/4541784060a3b28ffb67a5da67b1f7e7?s=96&d=mm&r=g","contentUrl":"https://kinsta.com/avatar/4541784060a3b28ffb67a5da67b1f7e7?s=96&d=mm&r=g","caption":"Daniel Diaz"},"description":"Daniel is a self-taught Python Developer, Technical Writer, and long-life learner. He enjoys creating software from scratch and explaining this process through stunning articles. Follow him on Twitter: @DaniDiazTech","sameAs":["https://developerroad.herokuapp.com/","https://www.linkedin.com/in/danidiaztech","https://twitter.com/DaniDiazTech"],"url":"https://kinsta.com/blog/author/danidiaztech/"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Kinsta® &raquo; Feed" href="https://kinsta.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Kinsta® &raquo; The 40 Most-Used Linux Commands You Should Know Comments Feed" href="https://kinsta.com/blog/linux-commands/feed/" />
+<link rel='stylesheet' id='kinsta-css-style-css'  href='https://kinsta.com/wp-content/themes/kinsta/dist/style.css?ver=733730140babf01ee0748c89e5d43b05' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://kinsta.com/wp-json/" /><link rel="alternate" type="application/json" href="https://kinsta.com/wp-json/wp/v2/posts/102301" /><link rel='shortlink' href='https://kinsta.com/?p=102301' />
+<link rel="alternate" type="application/json+oembed" href="https://kinsta.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkinsta.com%2Fblog%2Flinux-commands%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://kinsta.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkinsta.com%2Fblog%2Flinux-commands%2F&#038;format=xml" />
+
+<link rel="alternate" href="https://kinsta.com/blog/linux-commands/" hreflang="x-default" />
+<link rel="alternate" href="https://kinsta.com/blog/linux-commands/" hreflang="en" />
+<link rel="alternate" href="https://kinsta.com/es/blog/linux-comandos/" hreflang="es" />
+<link rel="alternate" href="https://kinsta.com/pt/blog/comandos-linux/" hreflang="pt" />
+<link rel="alternate" href="https://kinsta.com/fr/blog/commandes-linux/" hreflang="fr" />
+<link rel="alternate" href="https://kinsta.com/it/blog/comandi-linux/" hreflang="it" />
+<link rel="alternate" href="https://kinsta.com/de/blog/linux-befehle/" hreflang="de" />
+<link rel="alternate" href="https://kinsta.com/nl/blog/linux-opdrachten/" hreflang="nl" />
+<script>window.$kinsta = {"env":"production","restBaseURL":"https:\/\/kinsta.com\/wp-json\/","siteURL":"https:\/\/kinsta.com\/","themeDirURL":"https:\/\/kinsta.com\/wp-content\/themes\/kinsta\/","uploadDirBaseURL":"https:\/\/kinsta.com\/wp-content\/uploads\/","postURL":{"\/legal\/privacy-policy":"https:\/\/kinsta.com\/legal\/privacy-policy\/"},"isSingular":true,"wpPost":{"id":102301,"title":"The 40 Most-Used Linux Commands You Should Know","type":"post"}}</script>
+                    <script type="application/ld+json" id="wl-jsonld">[{"@context":"http:\/\/schema.org","@id":"http:\/\/data.wordlift.io\/wl0150038\/post\/the_40_most-used_linux_commands_you_should_know","@type":"Article","description":"As of writing this, Linux has a worldwide market share of 2.68% on desktops, but over 90% of all cloud infrastructure and hosting services run in this operating system. For this reason alone, it is crucial to be familiar with popular Linux commands. According to the 2020 StackOverflow survey, Linux is the most-used operating system...","mainEntityOfPage":"https:\/\/kinsta.com\/blog\/linux-commands\/","image":[{"@type":"ImageObject","url":"https:\/\/kinsta.com\/wp-content\/uploads\/2021\/09\/linux-commands-1200x675.jpg","width":1200,"height":675},{"@type":"ImageObject","url":"https:\/\/kinsta.com\/wp-content\/uploads\/2021\/09\/linux-commands.jpg","width":1460,"height":730}],"headline":"The 40 Most-Used Linux Commands You Should Know","datePublished":"2021-10-06T14:14:20+02:00","dateModified":"2022-03-28T21:27:41+02:00","wordCount":3361,"keywords":"Linux,web development","articleSection":"Uncategorized","commentCount":"1","inLanguage":"en-US","publisher":{"@type":"Organization","@id":"http:\/\/data.wordlift.io\/wl0150038\/entity\/kinsta","name":"Kinsta","sameAs":["https:\/\/www.google.com\/maps?cid=2028540986187945162","https:\/\/www.google.com\/maps?cid=137956406773061220","https:\/\/opencorporates.com\/companies\/us_de\/7460224.rdf","https:\/\/opencorporates.com\/companies\/gb\/09030972.rdf","https:\/\/g.co\/kg\/g\/11h_cs1m3s","https:\/\/www.linkedin.com\/company\/kinsta\/","https:\/\/profiles.wordpress.org\/kinstahosting\/","https:\/\/www.facebook.com\/kinstahosting","https:\/\/twitter.com\/kinsta","https:\/\/www.instagram.com\/kinstahosting\/","https:\/\/www.youtube.com\/kinsta"],"logo":{"@type":"ImageObject","url":"https:\/\/kinsta.com\/wp-content\/uploads\/2020\/12\/kinsta-logo--publisher-logo.jpg","width":600,"height":60}},"author":{"@type":"Person","@id":"http:\/\/data.wordlift.io\/wl0150038\/author\/danidiaztech","name":"Daniel Diaz","givenName":"Daniel","familyName":"Diaz","url":"https:\/\/kinsta.com\/blog\/author\/danidiaztech\/"},"mentions":[{"@id":"http:\/\/data.wordlift.io\/wl0150038\/term\/topic\/tech_tips"}]},{"@context":"http:\/\/schema.org","name":"Tech Tips","@type":["Thing"],"@id":"http:\/\/data.wordlift.io\/wl0150038\/term\/topic\/tech_tips","description":"","url":"https:\/\/kinsta.com\/topic\/tech-tips\/","mainEntityOfPage":"https:\/\/kinsta.com\/topic\/tech-tips\/"}]</script>
+		<link rel="preload" href="https://kinsta.com/wp-content/themes/kinsta/fonts/BrandonText-light.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://kinsta.com/wp-content/themes/kinsta/fonts/BrandonText-Black.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://kinsta.com/wp-content/themes/kinsta/fonts/BrandonText-Medium.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://kinsta.com/wp-content/themes/kinsta/fonts/roboto/Roboto-300.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://kinsta.com/wp-content/themes/kinsta/fonts/roboto/Roboto-regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://kinsta.com/wp-content/themes/kinsta/fonts/roboto/Roboto-500.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://kinsta.com/wp-content/themes/kinsta/fonts/roboto/Roboto-700.woff2" as="font" type="font/woff2" crossorigin><link rel="icon" href="https://kinsta.com/wp-content/uploads/2020/09/kinsta-favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://kinsta.com/wp-content/uploads/2020/09/kinsta-favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kinsta.com/wp-content/uploads/2020/09/kinsta-favicon.png" />
+<meta name="msapplication-TileImage" content="https://kinsta.com/wp-content/uploads/2020/09/kinsta-favicon.png" />
+</head>
+
+<body class="post-template-default single single-post postid-102301 single-format-standard wp-embed-responsive object-102301">
+
+<a class="skip-to-content" href="#main">
+  Skip to content</a>
+
+<p  id="kinsta-global-banner" class="kinsta-global-banner is-theme-default" data-hash="43c307ee158b0e541cf9ac05a2f56913"><a  class="kinsta-global-banner__inner" href="https://kinsta.com/wordpress-hosting/" data-track-ga-category="website-banner" data-track-ga-label="/blog/linux-commands/">Find out how moving to Kinsta could save you $2,400+ a year on site costs.</a></p><script>if (typeof window.localStorage !== "undefined" && window.localStorage.getItem("kinstaGlobalBannerDismissed") === "43c307ee158b0e541cf9ac05a2f56913") { document.getElementById("kinsta-global-banner").remove(); }</script>
+
+<header id="nav" class="site-menu site-menu--theme-default">
+    <div class="site-menu__inner">
+        <a href="https://kinsta.com/" class="site-menu__logo" rel="home">
+            <svg  class="icon icon--logo" aria-hidden="true" focusable="false" title="Kinsta®"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#logo" /></svg><span class="screen-reader-text">Kinsta®</span>        </a>
+
+        <a  href="#nav" id="nav-toggle" class="site-menu__nav__toggle" aria-label="Hamburger menu" aria-haspopup="true" aria-expanded="false">
+            Navigation        </a>
+
+        <nav class="site-menu__nav" aria-label="Main menu">
+    <div class="megamenu">
+        <ul class="megamenu__ul">
+                            <li class="megamenu__li">
+            <a href="https://kinsta.com/features/" class="megamenu__item" tabindex="0">Features</a>
+        </li>
+                            <li class="megamenu__li megamenu__li--has-children">
+            <span role="button" class="megamenu__item megamenu__item--has-children" tabindex="0">Solutions</span>
+                <ul class="megamenu__submenu" data-title="Solutions">
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/wordpress-hosting-agencies/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/stopwatch.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Agency            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/enterprise-wordpress-hosting/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/clone.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Enterprise            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/woocommerce-hosting/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/percentage.svg" width="16" height="16" alt="" aria-hidden="true" />
+                WooCommerce            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/wordpress-hosting-publishers/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/page.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Publishers            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/small-business-hosting/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/home.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Small Business            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/wordpress-membership-website-hosting/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/star.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Membership Site            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/wordpress-multisite-hosting/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/platforms.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Multisite            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/wordpress-hosting-for-education/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/graduation-hat.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Education            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/wordpress-lms-hosting/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/lightbulb.svg" width="16" height="16" alt="" aria-hidden="true" />
+                LMS            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/web-hosting-for-nonprofits/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/globe.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Nonprofits            </a>
+</li>
+                    </ul>
+    </li>
+                            <li class="megamenu__li">
+            <a href="https://kinsta.com/plans/" class="megamenu__item" tabindex="0">Plans</a>
+        </li>
+                            <li class="megamenu__li megamenu__li--has-children">
+            <span role="button" class="megamenu__item megamenu__item--has-children" tabindex="0">Clients</span>
+                <div class="megamenu__submenu megamenu__submenu--post-type">
+                            <div class="related-posts related-posts--grid">
+        <div class="related-posts__inner container">
+            <h2 class="related-posts__title">
+                Case Studies            </h2>
+
+            <div class="posts-grid related-posts__list">
+<div class="post-preview post-119798 case_studies type-case_studies status-publish has-post-thumbnail hentry segment-agency">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="https://kinsta.com/wp-content/uploads/2022/03/speee-kinsta-case-study-360x180.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="The Speee name below its logo, a blue circle bisected into two slightly disjointed halves." loading="lazy" />    </div>
+
+    <div class="post-preview__content">
+        
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/clients/speee/">
+        Speee Switches Internal CMS to Kinsta-Hosted WordPress to Reduce Costs and Simplify Operations    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Speee began operating an internally developed CMS, but they encountered problems in three areas: cost, usability, and stability. With the combination of WordPress and Kinsta, their workflow became incredibly smooth, and system stability improved immediately.    </div>
+    </div>
+</div>
+
+<div class="post-preview post-109558 case_studies type-case_studies status-publish has-post-thumbnail hentry segment-nonprofits segment-small-business">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="https://kinsta.com/wp-content/uploads/2021/11/Cornershop-Creative-360x180.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="Cornershop Creative" loading="lazy" srcset="https://kinsta.com/wp-content/uploads/2021/11/Cornershop-Creative-360x180.png 360w, https://kinsta.com/wp-content/uploads/2021/11/Cornershop-Creative-300x150.png 300w, https://kinsta.com/wp-content/uploads/2021/11/Cornershop-Creative.png 760w" sizes="(max-width: 360px) 100vw, 360px" />    </div>
+
+    <div class="post-preview__content">
+        
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/clients/cornershop-creative/">
+        Cornershop Creative Moves 110 Sites to Kinsta and Handles 1.2 Million Site Visits Per Month Effectively    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Cornershop Creative now moved several high-trafficked sites to Kinsta hosting, collectively handling millions of visits per month. Read their succe&hellip;    </div>
+    </div>
+</div>
+
+<div class="post-preview post-97869 case_studies type-case_studies status-publish has-post-thumbnail hentry segment-agency">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="https://kinsta.com/wp-content/uploads/2021/06/Motto-design-studio-760x380-1-360x180.jpg" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="Hand holding a sign of Motto&#039;s logo" loading="lazy" srcset="https://kinsta.com/wp-content/uploads/2021/06/Motto-design-studio-760x380-1-360x180.jpg 360w, https://kinsta.com/wp-content/uploads/2021/06/Motto-design-studio-760x380-1-300x150.jpg 300w, https://kinsta.com/wp-content/uploads/2021/06/Motto-design-studio-760x380-1.jpg 760w" sizes="(max-width: 360px) 100vw, 360px" />    </div>
+
+    <div class="post-preview__content">
+        
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/clients/motto/">
+        Motto &#8211; Building a Scalable WordPress Agency with Kinsta’s Reliable Hosting    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Motto moved their sites to Kinsta and saw a 50% increase in performance. Motto considers Kinsta&#039;s platform and staff as an extension of their own t&hellip;    </div>
+    </div>
+</div>
+</div>        </div>
+    </div>
+                            <a href="https://kinsta.com/clients/" class="megamenu__submenu--post-type__all-link">
+                    View all <span class="screen-reader-text">Case Studies</span>                </a>
+                    </div>
+    </li>
+                            <li class="megamenu__li megamenu__li--has-children">
+            <span role="button" class="megamenu__item megamenu__item--has-children" tabindex="0">Contact Us</span>
+                <ul class="megamenu__submenu megamenu__submenu--has-descriptions" data-title="Contact Us">
+                            <li class="megamenu__submenu__li">
+    <a  href="tel:+18886102915" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/phone.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Talk to sales                    <span class="megamenu__submenu__item__description">
+                Call <b class="kinsta-tel " data-tel-apac="(+61) 1800 952 470" data-tel-emea="+44 808 2583 915">
+    +1 (888) 610-2915</b>
+ and find the hosting plan that’s right for you.            </span>
+            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/schedule-demo/" class="megamenu__submenu__item" id="nav-js-sales">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/calendar.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Request a live demo                    <span class="megamenu__submenu__item__description">
+                Get a personalized demo of our powerful dashboard and hosting features.            </span>
+            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://kinsta.com/contact-us/" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/chat.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Ask questions                    <span class="megamenu__submenu__item__description">
+                Tell us about your website or project. We'll get back to you in one business day.            </span>
+            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a  href="https://my.kinsta.com" class="megamenu__submenu__item">
+                    <img  class="megamenu__submenu__item__icon" src="https://kinsta.com/wp-content/themes/kinsta/images/duos/small/lightning.svg" width="16" height="16" alt="" aria-hidden="true" />
+                Get help from our support team                    <span class="megamenu__submenu__item__description">
+                Talk with our experts by launching a chat in the MyKinsta dashboard.            </span>
+            </a>
+</li>
+                    </ul>
+    </li>
+                            <li class="megamenu__li site-menu__hidden-large">
+            <a href="https://my.kinsta.com/?lang=en" class="megamenu__item" tabindex="0">Login</a>
+        </li>
+                    </ul>
+    </div>
+</nav>
+
+                    <div class="site-menu__search" id="search-form-container">
+                <form class="site-menu__search__form" method='get' action='https://kinsta.com'>
+                    <label>
+                        <span class="screen-reader-text">Search</span>
+                        <input name='s' type='text' required='required' value='' placeholder='Search all Kinsta resources' />                    </label>
+                    <button type="submit" class="site-menu__search__icon">
+                        <span class="screen-reader-text">Submit search</span>
+                        <svg  class="icon icon--search" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#search" /></svg>                    </button>
+                </form>
+            </div>
+        
+                    <div class="site-menu__extras">
+                                                        <a  href="https://my.kinsta.com/login/?lang=en" class="site-menu__extras__item site-menu__hidden-small">
+                        Login                    </a>
+                                                        <a  href="https://kinsta.com/schedule-demo/" class="site-menu__extras__item button button--ghost--purple">
+                        Schedule a Demo                    </a>
+                            </div>
+            </div>
+</header>
+
+<div class="site-menu-placeholder" id="site-menu-placeholder"></div>
+
+<main id="main">
+
+
+<article class="post-102301 post type-post status-publish format-standard has-post-thumbnail hentry tag-linux tag-web-development topic-tech-tips wl_entity_type-article">
+	
+<div class="article-title container container--narrow">
+            
+    <nav  class="breadcrumbs breadcrumbs--only-last" aria-label="Breadcrumbs">
+        <ol>
+                                            <li>
+                    <a  href="https://kinsta.com" class="breadcrumbs__link">
+                        Home                    </a>
+                </li>
+                                            <li>
+                    <a  href="https://kinsta.com/resources/" class="breadcrumbs__link">
+                        Resource Center                    </a>
+                </li>
+                                            <li>
+                    <a  href="https://kinsta.com/blog/" class="breadcrumbs__link">
+                        Kinsta Blog                    </a>
+                </li>
+                    </ol>
+    </nav>
+    
+    <h1 class="article-title__title">
+        The 40 Most-Used Linux Commands You Should Know    </h1>
+
+    
+            <div class="article-title__meta">
+                            <a href="https://kinsta.com/blog/author/danidiaztech/" title="Posts by Daniel Diaz" rel="author">Daniel Diaz</a>,
+                                        <time class="article-title__meta__date" datetime="2022-03-28T21:27:41+00:00">
+                    March 28, 2022                </time>
+                    </div>
+    
+            <img width="1024" height="512" src="https://kinsta.com/wp-content/uploads/2021/09/linux-commands-1024x512.jpg" class="article-title__featured-image wp-post-image" alt="Illustration for Linux commands showing Tux, the official brand character of the Linux kernel." loading="eager" srcset="https://kinsta.com/wp-content/uploads/2021/09/linux-commands-1024x512.jpg 1024w, https://kinsta.com/wp-content/uploads/2021/09/linux-commands-300x150.jpg 300w, https://kinsta.com/wp-content/uploads/2021/09/linux-commands-768x384.jpg 768w, https://kinsta.com/wp-content/uploads/2021/09/linux-commands-360x180.jpg 360w, https://kinsta.com/wp-content/uploads/2021/09/linux-commands.jpg 1460w" sizes="(max-width: 1024px) 100vw, 1024px" />    </div>
+
+	    <div class="widget-share widget-share--horizontal">
+      <span class="widget-share__title">
+        <svg  class="icon icon--share" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#share" /></svg>                Shares      </span>
+      <style>body .novashare-buttons.novashare-floating .novashare-button-icon { width: 100%; }</style><div class='novashare-buttons novashare-floating novashare-no-print'><div class='novashare-buttons-wrapper'><a href='https://twitter.com/intent/tweet?text=The%2040%20Most-Used%20Linux%20Commands%20You%20Should%20Know&url=https%3A%2F%2Fbit.ly%2F3uJASS0&via=kinsta' aria-label='Twitter' target='_blank' class='novashare-button twitter' rel='nofollow noopener noreferrer'><span class='novashare-button-wrapper novashare-button-block'><span class='novashare-button-icon novashare-button-block'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></span></span></a><a href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbit.ly%2F3uJASS0' aria-label='Facebook' target='_blank' class='novashare-button facebook' rel='nofollow noopener noreferrer'><span class='novashare-button-wrapper novashare-button-block'><span class='novashare-button-icon novashare-button-block'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></span></span></a><a href='https://www.linkedin.com/shareArticle?title=The%2040%20Most-Used%20Linux%20Commands%20You%20Should%20Know&url=https%3A%2F%2Fkinsta.com%2Fblog%2Flinux-commands%2F&mini=true' aria-label='LinkedIn' target='_blank' class='novashare-button linkedin' rel='nofollow noopener noreferrer'><span class='novashare-button-wrapper novashare-button-block'><span class='novashare-button-icon novashare-button-block'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></span></span></a></div></div>    </div>
+    
+	<div class="container container--narrow container--noclear pb--60 user-content post-content mt--40 js-anchor-hashes" id="post-content-102301">
+		<div class="mb--50" data-interface="DownloadPostForm"><script type="application/ld+json">{"@context":"https://schema.org","@id":"https://kinsta.com/wp-content/themes/kinsta/images/interface/DownloadPostForm/post-download.mp4","@type":"VideoObject","duration":"PT7S","name":"Save this article as a PDF","embedUrl":"https://kinsta.com/wp-content/themes/kinsta/images/interface/DownloadPostForm/post-download.mp4","contentUrl":"https://kinsta.com/wp-content/themes/kinsta/images/interface/DownloadPostForm/post-download.mp4","thumbnailUrl":"https://kinsta.com/wp-content/uploads/2021/09/linux-commands.jpg","description":"In a hurry? Download a PDF version for easier offline reading and sharing with coworkers.","uploadDate":"2022-03-28T21:27:41+0200"}</script></div><p>As of writing this, Linux has a <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide" target="_blank" rel="noopener noreferrer">worldwide market share of 2.68%</a> on desktops, but over 90% of all cloud infrastructure and <a href="https://kinsta.com/wordpress-hosting/">hosting services</a> run in this operating system. For this reason alone, it is crucial to be familiar with popular Linux commands.</p><link rel="stylesheet" href="https://kinsta.com/wp-content/themes/kinsta/dist/patterns/cta-mini.css?ver=82073649f6821541f64c2e1f39c7a306">
+<aside class="sidebar-cta">
+    <div class="sidebar-cta__inner">
+        <div class="cta-mini">
+            <form id="cta-mini-competition-form" class="cta-mini__content cta-mini__content--comparison" action="https://kinsta.com/kinsta-alternatives/" method="post">
+    <video src="https://kinsta.com/wp-content/themes/kinsta/images/components/sidebar-cta/podium.mp4" loading="lazy" width="298" height="170" aria-hidden="true" loop="true" autoplay="true" playsinline="true" muted="true" disablepictureinpicture="true"></video>
+    <label for="cta-mini-competitors">See how Kinsta stacks up against the competition.</label>
+    <select name="cta-mini-competitors" id="cta-mini-competitors">
+        <option value="">
+            Select your provider        </option>
+                    <option value="https://kinsta.com/wp-engine-alternative/">
+                WP Engine            </option>
+                    <option value="https://kinsta.com/siteground-alternative/">
+                SiteGround            </option>
+                    <option value="https://kinsta.com/godaddy-alternative/">
+                GoDaddy            </option>
+                    <option value="https://kinsta.com/bluehost-alternative/">
+                Bluehost            </option>
+                    <option value="https://kinsta.com/flywheel-hosting-alternative/">
+                Flywheel            </option>
+                    <option value="https://kinsta.com/hostgator-alternative/">
+                HostGator            </option>
+                    <option value="https://kinsta.com/cloudways-alternative/">
+                Cloudways            </option>
+                    <option value="https://kinsta.com/aws-alternative/">
+                AWS            </option>
+                    <option value="https://kinsta.com/digitalocean-alternative/">
+                Digital Ocean            </option>
+                    <option value="https://kinsta.com/dreamhost-alternative/">
+                DreamHost            </option>
+                    <option value="https://kinsta.com/kinsta-alternatives/">
+                Other            </option>
+            </select>
+    <button class="button" type="submit" data-track-ga-category="sidebar-cta" data-track-ga-label="variation_comparison">Compare</button>
+</form>
+        </div>
+    </div>
+</aside>
+
+<p>According to the <a href="https://insights.stackoverflow.com/survey/2020#technology-platforms" target="_blank" rel="noopener noreferrer">2020 StackOverflow survey</a>, Linux is the most-used operating system by professional developers, with an impressive 55.9% of the market share. It isn’t just a coincidence. Linux is free and open-source, has better security than its competitors, and boasts a powerful command line that makes developers and power users more effective. You also have access to a powerful package manager and a bunch of development tools like <a href="https://kinsta.com/devkinsta/" target="_blank" rel="noopener noreferrer">DevKinsta</a>.</p>
+<p>Whether you’re an experienced Sysadmin or a Linux newcomer, you can take advantage of this guide.</p>
+<p>Let’s begin!</p>
+<div></div><kinsta-auto-toc heading="Table of Contents" exclude="last" list-style="arrow" selector="h2" count-number="-1"></kinsta-auto-toc>
+<h2>What Is a Linux Command?</h2>
+<p>A Linux command is a program or utility that runs on the command line. A <a href="https://kinsta.com/knowledgebase/devkinsta/wp-cli/">command line</a> is an interface that accepts lines of text and processes them into instructions for your computer.</p>
+<p>Any graphical user interface (GUI) is just an abstraction of command-line programs. For example, when you close a window by clicking on the “X,” there’s a command running behind that action.</p>
+<p>A <strong>flag </strong>is a way we can pass options to the command you run. Most Linux commands have a help page that we can call with the flag <code>-h</code>. Most of the time, flags are optional.</p>
+<p>An <strong>argument </strong>or parameter is the <strong>input</strong> we give to a command so it can run properly. In most cases, the argument is a file path, but it can be anything you type in the terminal.</p>
+<p>You can invoke flags using hyphens (<code>-</code>) and double hyphens (<code>--</code>), while argument execution depends on the order in which you pass them to the function.</p>
+<p><span><style>body a.novashare-ctt{display:block;background:#00abf0;margin:30px auto;padding:20px 20px 20px 15px;color:#fff;text-decoration:none!important;box-shadow:none!important;-webkit-box-shadow:none!important;-moz-box-shadow:none!important;border:none;border-left:5px solid #00abf0}body a.novashare-ctt:hover{color:#fff;border-left:5px solid #008cc4}body a.novashare-ctt:visited{color:#fff}body a.novashare-ctt *{pointer-events:none}body a.novashare-ctt .novashare-ctt-tweet{display:block;font-size:18px;line-height:27px;margin-bottom:10px}body a.novashare-ctt .novashare-ctt-cta-container{display:block;overflow:hidden}body a.novashare-ctt .novashare-ctt-cta{float:right}body a.novashare-ctt.novashare-ctt-cta-left .novashare-ctt-cta{float:left}body a.novashare-ctt .novashare-ctt-cta-text{font-size:16px;line-height:16px;vertical-align:middle}body a.novashare-ctt .novashare-ctt-cta-icon{margin-left:10px;display:inline-block;vertical-align:middle}body a.novashare-ctt .novashare-ctt-cta-icon svg{vertical-align:middle;height:18px}body a.novashare-ctt.novashare-ctt-simple{background:0 0;padding:10px 0 10px 20px;color:inherit}body a.novashare-ctt.novashare-ctt-simple-alt{background:#f9f9f9;padding:20px;color:#404040}body a.novashare-ctt.novashare-ctt-simple-alt:hover,body a.novashare-ctt.novashare-ctt-simple:hover{border-left:5px solid #008cc4}body a.novashare-ctt.novashare-ctt-simple .novashare-ctt-cta,body a.novashare-ctt.novashare-ctt-simple-alt .novashare-ctt-cta{color:#00abf0}body a.novashare-ctt.novashare-ctt-simple-alt:hover .novashare-ctt-cta,body a.novashare-ctt.novashare-ctt-simple:hover .novashare-ctt-cta{color:#008cc4}</style><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbit.ly%2F3uJASS0&via=kinsta&text=Did+you+know+that+90%25+of+all+cloud+infrastructure+and+hosting+services+use+Linux%3F+%F0%9F%A4%AF+For+this+reason+alone%2C+it+is+crucial+to+be+familiar+with+popular+Linux+commands.+%E2%AC%87%EF%B8%8F&hashtags=Linux%2COS" class="novashare-ctt novashare-ctt-cta-left" target="_blank" rel="nofollow noopener noreferrer"><span class="novashare-ctt-tweet">Did you know that 90% of all cloud infrastructure and hosting services use Linux? 🤯 For this reason alone, it is crucial to be familiar with popular Linux commands. ⬇️</span><span class="novashare-ctt-cta-container"><span class="novashare-ctt-cta"><span class="novashare-ctt-cta-text">Click to Tweet</span><span class="novashare-ctt-cta-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></span></span></span></a></span><br>
+<kinsta-advanced-cta language="en_US" type-int-post="102301" type-int-position="0"></kinsta-advanced-cta>
+</p>
+<h2>The Most-Used Linux Commands</h2>
+<p>Before jumping into the most-used Linux commands, make sure to fire up a <strong>terminal</strong>. In most Linux distributions, you would use <kbd>Ctrl + Alt + T</kbd> to do so. If this isn’t working, search in your application panel for “terminal.”</p>
+<figure id="attachment_102309" aria-describedby="caption-attachment-102309" style="width: 1024px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/Linux-terminal-emulator.png"><img loading="lazy" class="wp-image-102309 size-large" src="https://kinsta.com/wp-content/uploads/2021/08/Linux-terminal-emulator-1024x463.png" alt="The Linux terminal emulator." width="1024" height="463" srcset="https://kinsta.com/wp-content/uploads/2021/08/Linux-terminal-emulator-1024x463.png 1024w, https://kinsta.com/wp-content/uploads/2021/08/Linux-terminal-emulator-300x136.png 300w, https://kinsta.com/wp-content/uploads/2021/08/Linux-terminal-emulator-768x347.png 768w, https://kinsta.com/wp-content/uploads/2021/08/Linux-terminal-emulator.png 1208w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption id="caption-attachment-102309" class="wp-caption-text">The Linux terminal emulator.</figcaption></figure>
+<p>Now let’s dive into the 40 most-used Linux commands. Many of these have multiple options you can string to them, so make sure to <a href="https://linux.die.net/man/1/cp" target="_blank" rel="noopener noreferrer">check out the commands’ manual</a>.</p>
+<h3>1. <strong><code>ls</code></strong> Command</h3>
+<p><code>ls</code> is probably the first command every Linux user typed in their terminal. It allows you to list the contents of the directory you want (the current directory by default), including files and other nested directories.</p>
+<pre><code class="language-bash">ls</code></pre>
+<p>It has many options, so it might be good to get some help by using the <code>--help</code> flag. This flag returns all the flags you can use with ls.</p>
+<p>For example, to colorize the output of the <code>ls</code> command, you can use the following:</p>
+<pre><code class="language-bash">ls --color=auto</code></pre>
+<figure id="attachment_102310" aria-describedby="caption-attachment-102310" style="width: 1024px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/ls-command-colorized.png"><img loading="lazy" class="wp-image-102310 size-large" src="https://kinsta.com/wp-content/uploads/2021/08/ls-command-colorized-1024x185.png" alt="The colorized ls command." width="1024" height="185" srcset="https://kinsta.com/wp-content/uploads/2021/08/ls-command-colorized-1024x185.png 1024w, https://kinsta.com/wp-content/uploads/2021/08/ls-command-colorized-300x54.png 300w, https://kinsta.com/wp-content/uploads/2021/08/ls-command-colorized-768x138.png 768w, https://kinsta.com/wp-content/uploads/2021/08/ls-command-colorized.png 1320w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption id="caption-attachment-102310" class="wp-caption-text">The colorized ls command.</figcaption></figure>
+<p>Now the <code>ls</code> command output is colorized, and you can appreciate the difference between a directory and a file.</p>
+<p>But typing <code>ls</code> with the color flag would be inefficient; that’s why we use the <code>alias</code> command.</p>
+<h3>2. <strong><code>alias</code></strong> Command</h3>
+<p>The <code>alias</code> command lets you define temporary aliases in your shell session. When creating an alias, you instruct your shell to replace a word with a series of commands.</p>
+<p>For example, to set <code>ls</code> to have color without typing the <code>--color</code> flag every time, you would use:</p>
+<pre><code class="language-bash">alias ls="ls --color=auto"</code></pre>
+<p>As you can see, the <code>alias</code> command takes one key-value pair parameter: <code>alias NAME="VALUE"</code>. Note that the value must be inside quotes.</p>
+<p>If you want to list all the aliases you have in your shell session, you can run the <code>alias</code> command without argument.</p>
+<pre><code class="language-bash">alias</code></pre>
+<figure id="attachment_102311" aria-describedby="caption-attachment-102311" style="width: 1024px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/alias-command.png"><img loading="lazy" class="wp-image-102311 size-large" src="https://kinsta.com/wp-content/uploads/2021/08/alias-command-1024x460.png" alt="A list of aliases displayed in a fish shell." width="1024" height="460" srcset="https://kinsta.com/wp-content/uploads/2021/08/alias-command-1024x460.png 1024w, https://kinsta.com/wp-content/uploads/2021/08/alias-command-300x135.png 300w, https://kinsta.com/wp-content/uploads/2021/08/alias-command-768x345.png 768w, https://kinsta.com/wp-content/uploads/2021/08/alias-command.png 1328w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption id="caption-attachment-102311" class="wp-caption-text">The alias command.</figcaption></figure>
+<h3>3. <strong><code>unalias</code></strong> Command</h3>
+<p>As the name suggests, the <code>unalias</code> command aims to remove an <code>alias</code> from the already defined aliases. To remove the previous <code>ls</code> alias, you can use:</p>
+<pre><code class="language-bash">unalias ls</code></pre>
+<h3>4. <strong><code>pwd</code></strong> Command</h3>
+<p>The <code>pwd</code> command stands for “print working directory,” and it outputs the absolute path of the directory you’re in. For example, if your username is “john” and you’re in your Documents directory, its absolute path would be: <code>/home/john/Documents</code>.</p>
+<p>To use it, simply type <code>pwd</code> in the terminal:</p>
+<pre><code class="language-bash">pwd
+
+# My result: /home/kinsta/Documents/linux-commands</code></pre>
+<h3>5. <strong><code>cd</code></strong> Command</h3>
+<p>The <code>cd</code> command is highly popular, along with <code>ls</code>. It refers to “<strong>c</strong>hange <strong>d</strong>irectory” and, as its name suggests, switches you to the directory you’re trying to access.</p>
+<p>For instance, if you’re inside your Documents directory and you’re trying to access one of its subfolders called <strong>Videos</strong>, you can enter it by typing:</p>
+<pre><code class="language-bash">cd Videos</code></pre>
+<p>You can also supply the absolute path of the folder:</p>
+<pre><code class="language-bash">cd /home/kinsta/Documents/Videos</code></pre>
+<p>There are some tricks with the <code>cd</code> command that can save you a lot of time when playing around with it:</p>
+<h4>1. Go to the home folder</h4>
+<pre><code class="language-bash">cd</code></pre>
+<h4>2. Move a level up</h4>
+<pre><code class="language-bash">cd ..</code></pre>
+<h4>3. Return to the previous directory</h4>
+<pre><code class="language-bash">cd -</code></pre>
+<h3>6. <strong><code>cp</code></strong> Command</h3>
+<p>It’s so easy to copy files and folders directly in the Linux terminal that sometimes it can replace conventional file managers.</p>
+<p>To use the <code>cp</code> command, just type it along with the source and destination files:</p>
+<pre><code class="language-bash">cp file_to_copy.txt new_file.txt</code></pre>
+<p>You can also copy entire directories by using the recursive flag:</p>
+<pre><code class="language-bash">cp -r dir_to_copy/ new_copy_dir/</code></pre>
+<p>Remember that in Linux, folders end with a forward slash (<code>/</code>).</p>
+<h3>7. <strong><code>rm</code></strong> Command</h3>
+<p>Now that you know how to copy files, it’ll be helpful to know how to remove them.</p>
+<p>You can use the <code>rm</code> command to remove files and directories. Be careful while using it, though, because it’s very difficult (yet not impossible) to recover files deleted this way.</p>
+<p>To delete a regular file, you’d type:</p>
+<pre><code class="language-bash">rm file_to_copy.txt</code></pre>
+<p>If you want to delete an empty directory, you can use the recursive (<code>-r</code>) flag:</p>
+<pre><code class="language-bash">rm -r dir_to_remove/</code></pre>
+<p>On the other hand, to remove a directory with content inside of it, you need to use the force (-f) and recursive flags:</p>
+<pre><code class="language-bash">rm -rf dir_with_content_to_remove/</code></pre>
+<aside role="note" class="wp-block-kinsta-notice is-style-info">
+            <h3>Info</h3>
+        <p>Be careful with this — you can erase a whole day of work by misusing these two flags!</p>
+</aside>
+
+<h3>8. <strong><code>mv</code></strong> Command</h3>
+<p>You use the <code>mv</code> command to move (or rename) files and directories through your file system.</p>
+<p>To use this command, you’d type its name with the source and destination files:</p>
+<pre><code class="language-bash">mv source_file destination_folder/
+
+mv command_list.txt commands/</code></pre>
+<p>To utilize absolute paths, you’d use:</p>
+<pre><code class="language-bash">mv /home/kinsta/BestMoviesOfAllTime ./</code></pre>
+<p>…where <code>./</code> is the directory you’re currently in.</p>
+<p>You also can use <code>mv</code> to rename files while keeping them in the same directory:</p>
+<pre><code class="language-bash">mv old_file.txt new_named_file.txt</code></pre>
+<h3>9. <strong><code>mkdir</code></strong> Command</h3>
+<p>To create folders in the shell, you use the <code>mkdir</code> command. Just specify the new folder’s name, ensure it doesn’t exist, and you’re ready to go.</p>
+<p>For example, to make a directory to keep <a href="https://kinsta.com/blog/free-images-for-wordpress/">all of your images</a>, just type:</p>
+<pre><code class="language-bash">mkdir images/</code></pre>
+<p>To create subdirectories with a simple command, use the parent (<code>-p</code>) flag:</p>
+<pre><code class="language-bash">mkdir -p movies/2004/</code></pre>
+<h3>10. <strong><code>man</code></strong> Command</h3>
+<p>Another essential Linux command is <code>man</code>. It displays the manual page of any other command (as long as it has one).</p>
+<p>To see the manual page of the <code>mkdir</code> command, type:</p>
+<pre><code class="language-bash">man mkdir</code></pre>
+<p>You could even refer to the <code>man</code> manual page:</p>
+<pre><code class="language-bash">man man</code></pre>
+<figure id="attachment_102312" aria-describedby="caption-attachment-102312" style="width: 1015px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/Man-command.png"><img loading="lazy" class="wp-image-102312 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/Man-command.png" alt="The manual page of man." width="1015" height="727" srcset="https://kinsta.com/wp-content/uploads/2021/08/Man-command.png 1015w, https://kinsta.com/wp-content/uploads/2021/08/Man-command-300x215.png 300w, https://kinsta.com/wp-content/uploads/2021/08/Man-command-768x550.png 768w" sizes="(max-width: 1015px) 100vw, 1015px"></a><figcaption id="caption-attachment-102312" class="wp-caption-text">The manual page of “man.”</figcaption></figure>
+<h3>11. <strong><code>touch</code></strong> Command</h3>
+<p>The <code>touch</code> command allows you to update the access and modification times of the specified files.</p>
+<p>For example, I have an old file that was last modified on April 12th:</p>
+<figure id="attachment_102313" aria-describedby="caption-attachment-102313" style="width: 652px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/old-date.png"><img loading="lazy" class="wp-image-102313 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/old-date.png" alt="List command showing modifying dates of a set of files." width="652" height="487" srcset="https://kinsta.com/wp-content/uploads/2021/08/old-date.png 652w, https://kinsta.com/wp-content/uploads/2021/08/old-date-300x224.png 300w" sizes="(max-width: 652px) 100vw, 652px"></a><figcaption id="caption-attachment-102313" class="wp-caption-text">Old date.</figcaption></figure>
+<p>To change its modification date to the current time, we need to use the <code>-m </code> flag:</p>
+<pre><code class="language-bash">touch -m old_file</code></pre>
+<p>Now the date matches today’s date (which at the time of writing was August 8th).</p>
+<figure id="attachment_102314" aria-describedby="caption-attachment-102314" style="width: 654px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/new-date.png"><img loading="lazy" class="wp-image-102314 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/new-date.png" alt=" List command showing new date." width="654" height="498" srcset="https://kinsta.com/wp-content/uploads/2021/08/new-date.png 654w, https://kinsta.com/wp-content/uploads/2021/08/new-date-300x228.png 300w" sizes="(max-width: 654px) 100vw, 654px"></a><figcaption id="caption-attachment-102314" class="wp-caption-text">New date</figcaption></figure>
+<p>Nonetheless, most of the time, you won’t use <code>touch</code> to modify file dates, but rather to create new empty files:</p>
+<pre><code class="language-bash">touch new_file_name</code></pre>
+<h3>12. <strong><code>chmod</code></strong> Command</h3>
+<p>The <code>chmod</code> command lets you change the <a href="https://wiki.archlinux.org/title/File_permissions_and_attributes" target="_blank" rel="noopener noreferrer">mode of a file</a> (permissions) quickly. It has a lot of options available with it.</p>
+<p>The basic permissions a file can have are:</p>
+<ul>
+<li>r (read)</li>
+<li>w (write)</li>
+<li>x (execute)</li>
+</ul>
+<p>One of the most common use cases for <code>chmod</code> is to make a file executable by the user. To do this, type <code>chmod</code> and the flag <code>+x</code>, followed by the file you want to modify permissions on:</p>
+<pre><code class="language-bash">chmod +x script</code></pre>
+<p>You use this to make scripts executable, allowing you to run them directly by using the <code>./</code> notation.</p>
+<h3>13. <strong><code>./</code></strong> Command</h3>
+<p>Maybe the <code>./</code> notation isn’t a command itself, but it’s worth mentioning in this list. It lets your shell run an executable file with any interpreter installed in your system directly from the terminal. No more double-clicking a file in a graphical file manager!</p>
+<p>For instance, with this command, you can run a <a href="https://kinsta.com/blog/python-object-oriented-programming/">Python script</a> or a program only available in .run format, like <a href="https://kinsta.com/blog/install-wordpress-locally/#how-to-install-wordpress-locally-using-xampp">XAMPP</a>. When running an executable, make sure it has executable (x) permissions, which you can modify with the <code>chmod</code> command.</p>
+<p>Here’s a simple Python script and how we would run it with the <code>./</code> notation:</p>
+<pre><code class="language-python">
+#! /usr/bin/python3
+
+# filename: script
+
+for i in range(20):
+
+print(f"This is a cool script {i}")</code></pre>
+<p>Here’s how we’d convert the script into an executable and run it:</p>
+<pre><code class="language-bash">chmod +x script
+
+./script</code></pre>
+<h3>14. <strong><code>exit</code></strong> Command</h3>
+<p>The <code>exit</code> command does exactly what its name suggests: With it, you can end a shell session and, in most cases, automatically close <a href="https://kinsta.com/blog/how-to-use-ssh/">the terminal</a> you’re using:</p>
+<pre><code class="language-bash">exit</code></pre>
+<h3>15. <strong><code>sudo</code></strong> Command</h3>
+<p>This command stands for “superuser do,” and it lets you act as a superuser or root user while you’re running a specific command. It’s how Linux protects itself and prevents users from accidentally modifying the machine’s filesystem or installing inappropriate packages.</p>
+<p>Sudo is commonly used to install software or to edit files outside the user’s home directory:</p>
+<pre><code class="language-bash">sudo apt install gimp
+
+sudo <code>cd</code> /root/ </code></pre>
+<p>It’ll ask you for the administrator’s password before running the command you typed after it.</p>
+<h3>16. <strong><code>shutdown</code></strong> Command</h3>
+<p>As you may guess, the <code>shutdown</code> command lets you power off your machine. However, it also can be used to halt and reboot it.</p>
+<p>To power off your computer immediately (the default is one minute), type:</p>
+<pre><code class="language-bash">shutdown now</code></pre>
+<p>You can also schedule to turn off your system in a 24-hour format:</p>
+<pre><code class="language-bash">shutdown 20:40</code></pre>
+<p>To cancel a previous <code>shutdown</code> call, you can use the <code>-c</code> flag:</p>
+<pre><code class="language-bash">shutdown -c</code></pre>
+<h3>17. <strong><code>htop</code></strong> Command</h3>
+<p><code>htop</code> is an interactive process viewer that lets you manage your machine’s resources directly from the terminal. In most cases, it isn’t installed d by default, so make sure to read more about it <a href="https://htop.dev/downloads.html" target="_blank" rel="noopener noreferrer">on its download page</a>.</p><div class="in-post-container"><dialog id="newsletter" class="dialog dialog has-dark-blue-background-color email-modal" aria-hidden="true">
+    <div class="dialog__content">
+        <h2 class="heading--large text--center color--white mb--30">
+            Sign Up For the Newsletter        </h2>
+    <kinsta-form show-name="false" show-phone="false" show-website="false" show-company="false" show-disk-space="false" show-monthly-visits="false" show-number-of-websites="false" show-message="false" submit-button-text="Sign Up Now" submit-button-text-sending="Signing Up..." success-title="Thanks for subscribing!" success-message="Keep an eye out for our next newsletter." terms-template="newsletter" hubspot-source="subscribe_to_newsletter" submit-button-text-loading="Signing Up"></kinsta-form>
+    </div>
+</dialog>
+<div class="box box--noshadow has-gray-background-color newsletter-cta">
+  <div class="newsletter-cta__content">
+    <h3 class="heading" style="font-size: 2rem;">Want to know how we increased our traffic over 1000%?</h3>
+          <p class="mt--10 mb--20"> Join 20,000+ others who get our weekly newsletter with insider WordPress tips! </p>
+      </div>
+  <a href="#newsletter" data-dialog-src="#newsletter" class="button button--purple newsletter-cta__button">
+    Subscribe Now  </a>
+</div>
+</div>
+<pre><code class="language-bash">htop</code></pre>
+<figure id="attachment_102315" aria-describedby="caption-attachment-102315" style="width: 1024px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/htop-interface.png"><img loading="lazy" class="wp-image-102315 size-large" src="https://kinsta.com/wp-content/uploads/2021/08/htop-interface-1024x560.png" alt="The htop interface." width="1024" height="560" srcset="https://kinsta.com/wp-content/uploads/2021/08/htop-interface-1024x560.png 1024w, https://kinsta.com/wp-content/uploads/2021/08/htop-interface-300x164.png 300w, https://kinsta.com/wp-content/uploads/2021/08/htop-interface-768x420.png 768w, https://kinsta.com/wp-content/uploads/2021/08/htop-interface-1536x840.png 1536w, https://kinsta.com/wp-content/uploads/2021/08/htop-interface.png 1894w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption id="caption-attachment-102315" class="wp-caption-text">The “htop” interface.</figcaption></figure>
+<h3>18. <strong><code>unzip</code></strong> Command</h3>
+<p>The <a href="https://kinsta.com/knowledgebase/unzip-zip-file/#step-3--unzip-the-zip-file-using-terminal">unzip</a> command allows you to extract the content of a <strong>.zip</strong> file from the terminal. Once again, this package may not be installed by default, so make sure you install it with your package manager.</p>
+<p>Here, we’re unpacking a .zip file full of images:</p>
+<pre><code class="language-bash">unzip images.zip</code></pre>
+<h3>19. <code>apt</code>, <code>yum</code>, <code>pacman</code> commands</h3>
+<p>No matter which Linux distribution you’re using, it’s likely that you use package managers to install, update, and remove the software you use every day.</p>
+<p>You can access these package managers through the command line, and you’d use one or another depending on the distro your machine is running.</p>
+<p>The following examples will install <a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a>, a free and open source software usually available in most package managers:</p>
+<h4>1. Debian-based (Ubuntu, Linux Mint)</h4>
+<pre><code class="language-bash">sudo apt install gimp</code></pre>
+<h4>2. Red Hat-based (Fedora, CentOS)</h4>
+<pre><code class="language-bash">sudo yum install gimp</code></pre>
+<h4>3. Arch-based (Manjaro, Arco Linux)</h4>
+<pre><code class="language-bash">sudo pacman -S gimp</code></pre>
+<h3>20. <strong><code>echo</code></strong> Command</h3>
+<p>The <code>echo</code> command displays defined text in the terminal — it’s that simple:</p>
+<pre><code class="language-bash">echo "Cool message"</code></pre>
+<figure id="attachment_102316" aria-describedby="caption-attachment-102316" style="width: 912px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/echo-command.png"><img loading="lazy" class="wp-image-102316 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/echo-command.png" alt='The echo command displaying "Cool message".' width="912" height="175" srcset="https://kinsta.com/wp-content/uploads/2021/08/echo-command.png 912w, https://kinsta.com/wp-content/uploads/2021/08/echo-command-300x58.png 300w, https://kinsta.com/wp-content/uploads/2021/08/echo-command-768x147.png 768w" sizes="(max-width: 912px) 100vw, 912px"></a><figcaption id="caption-attachment-102316" class="wp-caption-text">The echo command</figcaption></figure>
+<p>Its primary usage is to print environmental variables inside those messages:</p>
+<pre><code class="language-bash">echo "Hey $USER"
+
+# Hey kinsta</code></pre>
+<h3>21. <strong><code>cat</code></strong> Command</h3>
+<p><code>Cat</code>, short for “concatenate,” lets you create, view, and concatenate files directly from the terminal. It’s mainly used to preview a file without opening a graphical text editor:</p>
+<pre><code class="language-bash">cat long_text_file.txt</code></pre>
+<figure id="attachment_102317" aria-describedby="caption-attachment-102317" style="width: 962px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/cat-command.png"><img loading="lazy" class="wp-image-102317 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/cat-command.png" alt='The cat command displaying "Not that large at all".' width="962" height="155" srcset="https://kinsta.com/wp-content/uploads/2021/08/cat-command.png 962w, https://kinsta.com/wp-content/uploads/2021/08/cat-command-300x48.png 300w, https://kinsta.com/wp-content/uploads/2021/08/cat-command-768x124.png 768w" sizes="(max-width: 962px) 100vw, 962px"></a><figcaption id="caption-attachment-102317" class="wp-caption-text">The cat command.</figcaption></figure>
+<h3>22. <strong><code>ps</code></strong> Command</h3>
+<p>With <code>ps</code>, you can take a look at the processes your current shell session is running. It prints useful information about the programs you’re running, like process ID, TTY (TeleTYpewriter), time, and command name.</p>
+<pre><code class="language-bash">ps</code></pre>
+<figure id="attachment_102318" aria-describedby="caption-attachment-102318" style="width: 551px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/ps-command.png"><img loading="lazy" class="wp-image-102318 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/ps-command.png" alt="The ps command." width="551" height="153" srcset="https://kinsta.com/wp-content/uploads/2021/08/ps-command.png 551w, https://kinsta.com/wp-content/uploads/2021/08/ps-command-300x83.png 300w" sizes="(max-width: 551px) 100vw, 551px"></a><figcaption id="caption-attachment-102318" class="wp-caption-text">The ps command.</figcaption></figure>
+<p>In case you want something more interactive, you can use <code>htop</code>.</p>
+<h3>23. <strong><code>kill</code></strong> Command</h3>
+<p>It’s annoying when a program is unresponsive, and you can’t close it by any means. Fortunately, the <code>kill</code> command solves this kind of problem.</p>
+<p>Simply put, <code>kill</code> sends a TERM or kill signal to a process that terminates it.</p>
+<p>You can kill processes by entering either the PID (processes ID) or the program’s binary name:</p>
+<pre><code class="language-bash">kill 533494
+
+kill firefox</code></pre>
+<p>Be careful with this command — with <code>kill</code>, you run the risk of accidentally deleting the work you’ve been doing.</p>
+<h3>24. <strong><code>ping</code></strong> Command</h3>
+<p><code>ping</code> is the most popular networking terminal utility used to test network connectivity. <code>ping</code> has a ton of options, but in most cases, you’ll use it to request a domain or <a href="https://kinsta.com/tools/what-is-my-ip/">IP address</a>:</p>
+<pre><code class="language-bash">ping google.com
+
+ping 8.8.8.8</code></pre>
+<h3>25. <strong><code>vim</code></strong> Command</h3>
+<p><code>vim</code> is a free and open source terminal text editor that’s in used since the ’90s. It lets you edit plain text files using efficient keybindings.</p>
+<p>Some people consider it difficult to use — <a href="https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor" target="_blank" rel="noopener noreferrer">exiting Vim</a> is one of the most-viewed StackOverflow questions — but once you get used to it, it becomes your best ally in the command line.</p>
+<p>To fire up Vim, just type:</p>
+<pre><code class="language-bash">vim</code></pre>
+<figure id="attachment_102319" aria-describedby="caption-attachment-102319" style="width: 1024px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/vim-text-editor.png"><img loading="lazy" class="wp-image-102319 size-large" src="https://kinsta.com/wp-content/uploads/2021/08/vim-text-editor-1024x552.png" alt="The vim text editor." width="1024" height="552" srcset="https://kinsta.com/wp-content/uploads/2021/08/vim-text-editor-1024x552.png 1024w, https://kinsta.com/wp-content/uploads/2021/08/vim-text-editor-300x162.png 300w, https://kinsta.com/wp-content/uploads/2021/08/vim-text-editor-768x414.png 768w, https://kinsta.com/wp-content/uploads/2021/08/vim-text-editor.png 1337w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption id="caption-attachment-102319" class="wp-caption-text">The vim text editor.</figcaption></figure>
+<h3>26. <strong><code>history</code></strong> Command</h3>
+<p>If you’re struggling to remember a command, <code>history</code> comes in handy. This command displays an enumerated list with the commands you’ve used in the past:</p>			<div class="in-post-container">
+			<div id="simple-promo">
+  <div class="mb--20 mt--0 heading--normal">
+  <p>All Kinsta hosting plans include 24/7 support from our veteran WordPress developers and engineers. Chat with the same team that backs our Fortune 500 clients. <a onclick="gtag('event', 'click', {'event_category': 'blog-article', 'event_label': 'blog-inarticle-minimaltext'})" href="https://kinsta.com/plans/">Check out our plans</a>!</p>  </div>
+</div>
+			</div>
+			
+<pre><code class="language-bash">history</code></pre>
+<figure id="attachment_102320" aria-describedby="caption-attachment-102320" style="width: 978px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/history-command.png"><img loading="lazy" class="wp-image-102320 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/history-command.png" alt="The history command." width="978" height="388" srcset="https://kinsta.com/wp-content/uploads/2021/08/history-command.png 978w, https://kinsta.com/wp-content/uploads/2021/08/history-command-300x119.png 300w, https://kinsta.com/wp-content/uploads/2021/08/history-command-768x305.png 768w" sizes="(max-width: 978px) 100vw, 978px"></a><figcaption id="caption-attachment-102320" class="wp-caption-text">The history command.</figcaption></figure>
+<h3>27. <strong><code>passwd</code></strong> Command</h3>
+<p><code>passwd</code> allows you to <a href="https://kinsta.com/blog/change-wordpress-password/">change the passwords</a> of user accounts. First, it prompts you to enter your current password, then asks you for a new password and confirmation.</p>
+<p>It’s similar to any other change of password you’ve seen elsewhere, but in this case, it’s directly in your terminal:</p>
+<pre><code class="language-bash">passwd</code></pre>
+<figure id="attachment_102321" aria-describedby="caption-attachment-102321" style="width: 899px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/passwd-command.png"><img loading="lazy" class="wp-image-102321 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/passwd-command.png" alt=" The passwd command asking for the current password." width="899" height="179" srcset="https://kinsta.com/wp-content/uploads/2021/08/passwd-command.png 899w, https://kinsta.com/wp-content/uploads/2021/08/passwd-command-300x60.png 300w, https://kinsta.com/wp-content/uploads/2021/08/passwd-command-768x153.png 768w" sizes="(max-width: 899px) 100vw, 899px"></a><figcaption id="caption-attachment-102321" class="wp-caption-text">The passwd command</figcaption></figure>
+<p>Be careful while using it — you don’t want to mess up your user password!</p>
+<h3>28. <strong><code>which</code></strong> Command</h3>
+<p>The <code>which</code> command outputs the full path of shell commands. If it can’t recognize the given command, it’ll throw an error.</p>
+<p>For example, we can use this to check the binary path for <a href="https://kinsta.com/blog/python-tutorials/">Python</a> and the <a href="https://kinsta.com/blog/brave-browser-review/">Brave web browser</a>:</p>
+<pre><code class="language-bash">which python
+
+# /usr/bin/python
+
+which brave
+
+# /usr/bin/brave</code></pre>
+<h3>29. <strong><code>shred</code></strong> Command</h3>
+<p>If you ever wanted a file to be almost impossible to <a href="https://kinsta.com/help/disaster-recovery/">recover</a>, <code>shred</code> can help you with this task. This command overrides the contents of a file repeatedly, and as a result, the given file becomes extremely difficult to recover.</p>
+<p>Here’s a file with little content in it:</p>
+<figure id="attachment_102322" aria-describedby="caption-attachment-102322" style="width: 791px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/file-to-shred.png"><img loading="lazy" class="wp-image-102322 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/file-to-shred.png" alt='A file_to_shred.txt that contains "A testing file"' width="791" height="125" srcset="https://kinsta.com/wp-content/uploads/2021/08/file-to-shred.png 791w, https://kinsta.com/wp-content/uploads/2021/08/file-to-shred-300x47.png 300w, https://kinsta.com/wp-content/uploads/2021/08/file-to-shred-768x121.png 768w" sizes="(max-width: 791px) 100vw, 791px"></a><figcaption id="caption-attachment-102322" class="wp-caption-text">File to shred.</figcaption></figure>
+<p>Now, let’s have <code>shred</code> do its thing by typing the following command:</p>
+<pre><code class="language-bash">shred file_to_shred.txt</code></pre>
+<figure id="attachment_102323" aria-describedby="caption-attachment-102323" style="width: 1024px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/Overwritten-content.png"><img loading="lazy" class="wp-image-102323 size-large" src="https://kinsta.com/wp-content/uploads/2021/08/Overwritten-content-1024x553.png" alt="Overwritten content." width="1024" height="553" srcset="https://kinsta.com/wp-content/uploads/2021/08/Overwritten-content-1024x553.png 1024w, https://kinsta.com/wp-content/uploads/2021/08/Overwritten-content-300x162.png 300w, https://kinsta.com/wp-content/uploads/2021/08/Overwritten-content-768x414.png 768w, https://kinsta.com/wp-content/uploads/2021/08/Overwritten-content.png 1340w" sizes="(max-width: 1024px) 100vw, 1024px"></a><figcaption id="caption-attachment-102323" class="wp-caption-text">Overwritten content.</figcaption></figure>
+<p>If you want to delete the file right away, you can use the <code>-u</code> flag:</p>
+<pre><code class="language-bash">shred -u file_to_shred.txt</code></pre>
+<h3>30. <strong><code>less</code></strong> Command</h3>
+<p><code>less</code> (opposite of <a href="https://man7.org/linux/man-pages/man1/more.1.html" target="_blank" rel="noopener noreferrer">more</a>) is a program that lets you inspect files backward and forward:</p>
+<pre><code class="language-bash">less large_text_file.txt</code></pre>
+<figure id="attachment_102324" aria-describedby="caption-attachment-102324" style="width: 949px" class="wp-caption alignnone"><a href="https://kinsta.com/wp-content/uploads/2021/08/less-command.png"><img loading="lazy" class="wp-image-102324 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/less-command.png" alt="The less command." width="949" height="717" srcset="https://kinsta.com/wp-content/uploads/2021/08/less-command.png 949w, https://kinsta.com/wp-content/uploads/2021/08/less-command-300x227.png 300w, https://kinsta.com/wp-content/uploads/2021/08/less-command-768x580.png 768w" sizes="(max-width: 949px) 100vw, 949px"></a><figcaption id="caption-attachment-102324" class="wp-caption-text">The less command.</figcaption></figure>
+<p>The neat thing about <code>less</code> is that it includes more and <code>vim</code> commands in its interface. If you need something more interactive than <code>cat</code>, <code>less</code> is a good option.</p>
+<h3>31. <strong><code>tail</code></strong> Command</h3>
+<p>Similar to <code>cat</code>, <code>tail</code> prints the contents of a file with one major caveat: It only outputs the last lines. By default, it prints the last 10 lines, but you can modify that number with <code>-n</code>.</p>
+<p>For example, to print the last lines of a large text file, you’d use:</p>
+<pre><code class="language-bash">tail long.txt</code></pre>
+<figure id="attachment_102325" aria-describedby="caption-attachment-102325" style="width: 996px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/tail-command.png"><img loading="lazy" class="wp-image-102325 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/tail-command.png" alt="The tail command." width="996" height="330" srcset="https://kinsta.com/wp-content/uploads/2021/08/tail-command.png 996w, https://kinsta.com/wp-content/uploads/2021/08/tail-command-300x99.png 300w, https://kinsta.com/wp-content/uploads/2021/08/tail-command-768x254.png 768w" sizes="(max-width: 996px) 100vw, 996px"></a><figcaption id="caption-attachment-102325" class="wp-caption-text">The tail command.</figcaption></figure>
+<p>To view only the last four lines:</p>
+<pre><code class="language-bash">tail -n 4 long.txt</code></pre>
+<figure id="attachment_102326" aria-describedby="caption-attachment-102326" style="width: 991px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/tail-four-lines.png"><img loading="lazy" class="wp-image-102326 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/tail-four-lines.png" alt="The tail command displaying the last four lines of a file." width="991" height="188" srcset="https://kinsta.com/wp-content/uploads/2021/08/tail-four-lines.png 991w, https://kinsta.com/wp-content/uploads/2021/08/tail-four-lines-300x57.png 300w, https://kinsta.com/wp-content/uploads/2021/08/tail-four-lines-768x146.png 768w" sizes="(max-width: 991px) 100vw, 991px"></a><figcaption id="caption-attachment-102326" class="wp-caption-text">tail four lines.</figcaption></figure>
+<h3>32. <strong><code>head</code></strong> Command</h3>
+<p>This one is complementary to the <code>tail</code> command. <code>head</code> outputs the first 10 lines of a text file, but you can set any number of lines you want to display with the <code>-n</code> flag:</p>
+<pre><code class="language-bash">head long.txt
+
+head -n 5 long.txt</code></pre>
+<figure id="attachment_102327" aria-describedby="caption-attachment-102327" style="width: 813px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/head-command.png"><img loading="lazy" class="wp-image-102327 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/head-command.png" alt="The head with different flags in one file." width="813" height="531" srcset="https://kinsta.com/wp-content/uploads/2021/08/head-command.png 813w, https://kinsta.com/wp-content/uploads/2021/08/head-command-300x196.png 300w, https://kinsta.com/wp-content/uploads/2021/08/head-command-768x502.png 768w" sizes="(max-width: 813px) 100vw, 813px"></a><figcaption id="caption-attachment-102327" class="wp-caption-text">The head command.</figcaption></figure>
+<h3>33. <strong><code>grep</code></strong> Command</h3>
+<p>Grep is one of the most powerful utilities for working with text files. It searches for lines that match a <a href="https://regex101.com/" target="_blank" rel="noopener noreferrer">regular expression</a> and print them:</p>
+<pre><code class="language-bash">grep "linux" long.txt</code></pre>
+<figure id="attachment_102328" aria-describedby="caption-attachment-102328" style="width: 998px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/grep-command.png"><img loading="lazy" class="wp-image-102328 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/grep-command.png" alt="The grep command." width="998" height="169" srcset="https://kinsta.com/wp-content/uploads/2021/08/grep-command.png 998w, https://kinsta.com/wp-content/uploads/2021/08/grep-command-300x51.png 300w, https://kinsta.com/wp-content/uploads/2021/08/grep-command-768x130.png 768w" sizes="(max-width: 998px) 100vw, 998px"></a><figcaption id="caption-attachment-102328" class="wp-caption-text">The grep command.</figcaption></figure>
+<p>You can count the number of times the pattern repeats by using the <code>-c</code> flag:</p>
+<pre><code class="language-bash">grep -c "linux" long.txt
+
+# 2</code></pre>
+<h3>34. <strong><code>whoami</code></strong> Command</h3>
+<p>The <code>whoami</code> command (short for “who am i”) displays the <a href="https://kinsta.com/knowledgebase/change-wordpress-username/">username</a> currently in use:</p>
+<pre><code class="language-bash">whoami
+
+# kinsta</code></pre>
+<p>You would get the same result by using <code>echo</code> and the environmental variable $USER:</p>
+<pre><code class="language-bash">echo $USER
+
+# kinsta</code></pre>
+<h3>35. <strong><code>whatis</code></strong> Command</h3>
+<p><code>whatis</code> prints a single-line description of any other command, making it a helpful reference:</p>
+<pre><code class="language-bash">whatis python
+
+# python (1) - an interpreted, interactive, object-oriented programming language
+
+whatis whatis
+
+# whatis (1) - display one-line manual page descriptions</code></pre>
+<h3>36. <strong><code>wc</code></strong> Command</h3>
+<p>Wc stands for “word count,” and as the name suggests, it returns the number of words in a text file:</p>
+<pre><code class="language-bash">wc long.txt
+
+# 37 207 1000 long.txt</code></pre>
+<p>Let’s breakdown the output of this command:</p>
+<ul>
+<li>37 lines</li>
+<li>207 words</li>
+<li>1000 byte-size</li>
+<li>The name of the file (long.txt)</li>
+</ul>
+<p>If you only need the number of words, use the <code>-w</code> flag:</p>
+<pre><code class="language-bash">wc -w long.txt
+
+207 long.txt</code></pre>
+<h3>37. <strong><code>uname</code></strong> Command</h3>
+<p><code>uname</code>(short for “Unix name”) prints the operative system information, which comes in handy when you know your current Linux version.</p>
+<p>Most of the time, you’ll be using the <code>-a</code> (–all) flag, since the default output isn’t that useful:</p>
+<pre><code class="language-bash">uname
+
+# Linux
+
+uname -a
+
+# Linux kinstamanjaro 5.4.138-1-MANJARO #1 SMP PREEMPT Thu Aug 5 12:15:21 UTC 2021 x86_64 GNU/Linux</code></pre>
+<h3>38. <strong><code>neofetch</code></strong> Command</h3>
+<p><a href="https://github.com/dylanaraps/neofetch" target="_blank" rel="noopener noreferrer">Neofetch</a> is a CLI (command-line interface) tool that displays information about your system — like kernel version, shell, and hardware — next to an ASCII logo of your Linux distro:</p>
+<pre><code class="language-bash">neofetch</code></pre>
+<figure id="attachment_102329" aria-describedby="caption-attachment-102329" style="width: 854px" class="wp-caption aligncenter"><a href="https://kinsta.com/wp-content/uploads/2021/08/neofetch.png"><img loading="lazy" class="wp-image-102329 size-full" src="https://kinsta.com/wp-content/uploads/2021/08/neofetch.png" alt="Neofetch displaying system information." width="854" height="528" srcset="https://kinsta.com/wp-content/uploads/2021/08/neofetch.png 854w, https://kinsta.com/wp-content/uploads/2021/08/neofetch-300x185.png 300w, https://kinsta.com/wp-content/uploads/2021/08/neofetch-768x475.png 768w" sizes="(max-width: 854px) 100vw, 854px"></a><figcaption id="caption-attachment-102329" class="wp-caption-text">The neofetch command.</figcaption></figure>
+<p>In most machines, this command isn’t available by default, so make sure to install it with your package manager first.</p>
+<h3>39. <strong><code>find</code></strong> Command</h3>
+<p>The <code>find</code> command searches for <a href="https://kinsta.com/knowledgebase/wordpress-files/">files in a directory</a> hierarchy based on a regex expression. To use it, follow the syntax below:</p>
+<pre><code class="language-bash">find [flags] [path] -name [expression]</code></pre>
+<p>To search for a file named <strong>long.txt</strong> in the current directory, enter this:</p>
+<pre><code class="language-bash">find <code>./</code> -name "long.txt" # ./long.txt </code></pre>
+<p>To search for files that end with a <strong>.py</strong> (Python) extension, you can use the following command:</p>
+<pre><code class="language-bash">find <code>./</code> -type f -name "*.py" ./get_keys.py ./github_automation.py ./binarysearch.py </code></pre>
+<h3>40. <strong><code>wget</code></strong> Command</h3>
+<p><code>wget</code> (World Wide Web get) is a utility to retrieve content from the internet. It has one of the largest collections of flags out there.</p>
+<p>Here’s how you would download a Python file from a <a href="https://kinsta.com/knowledgebase/what-is-github/">GitHub</a> repo:</p>
+<pre><code class="language-bash">wget https://raw.githubusercontent.com/DaniDiazTech/Object-Oriented-Programming-in-Python/main/object_oriented_programming/cookies.py</code></pre>
+<h2>Linux Commands Cheat Sheet</h2>
+<p>Whenever you want a quick reference, just review the below table:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ls</code></td>
+<td>Lists the content of a directory</td>
+</tr>
+<tr>
+<td><code>alias</code></td>
+<td>Define or display aliases</td>
+</tr>
+<tr>
+<td><code>unalias</code></td>
+<td>Remove <code>alias</code> definitions</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>Prints the working directory</td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td>Changes directory</td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>Copies files and directories</td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td>Remove files and directories</td>
+</tr>
+<tr>
+<td><code>mv</code></td>
+<td>Moves (renames) files and directories</td>
+</tr>
+<tr>
+<td><code>mkdir</code></td>
+<td>Creates directories</td>
+</tr>
+<tr>
+<td><code>man</code></td>
+<td>Displays manual page of other commands</td>
+</tr>
+<tr>
+<td><code>touch</code></td>
+<td>Creates empty files</td>
+</tr>
+<tr>
+<td><code>chmod</code></td>
+<td>Changes file permissions</td>
+</tr>
+<tr>
+<td><code>./</code></td>
+<td>Runs an executable</td>
+</tr>
+<tr>
+<td><code>exit</code></td>
+<td>Exits the current shell session</td>
+</tr>
+<tr>
+<td><code>sudo</code></td>
+<td>Executes commands as superuser</td>
+</tr>
+<tr>
+<td><code>shutdown</code></td>
+<td>Shutdowns your machine</td>
+</tr>
+<tr>
+<td><code>htop</code></td>
+<td>Displays processes and resources information</td>
+</tr>
+<tr>
+<td><code>unzip</code></td>
+<td>Extracts <a href="https://kinsta.com/knowledgebase/unzip-zip-file/">compressed ZIP files</a></td>
+</tr>
+<tr>
+<td><code>apt</code>, <code>yum</code>, <code>pacman</code></td>
+<td>Package managers</td>
+</tr>
+<tr>
+<td><code>echo</code></td>
+<td>Displays lines of text</td>
+</tr>
+<tr>
+<td><code>cat</code></td>
+<td>Prints file contents</td>
+</tr>
+<tr>
+<td><code>ps</code></td>
+<td>Reports shell processes status</td>
+</tr>
+<tr>
+<td><code>kill</code></td>
+<td>Terminates programs</td>
+</tr>
+<tr>
+<td><code>ping</code></td>
+<td>Tests network connectivity</td>
+</tr>
+<tr>
+<td><code>vim</code></td>
+<td>Efficient text editing</td>
+</tr>
+<tr>
+<td><code>history</code></td>
+<td>Shows a list of previous commands</td>
+</tr>
+<tr>
+<td><code>passwd</code></td>
+<td>Changes user password</td>
+</tr>
+<tr>
+<td><code>which</code></td>
+<td>Returns the full binary path of a program</td>
+</tr>
+<tr>
+<td><code>shred</code></td>
+<td>Overwrites a file to hide its contents</td>
+</tr>
+<tr>
+<td><code>less</code></td>
+<td>Inspects files interactively</td>
+</tr>
+<tr>
+<td><code>tail</code></td>
+<td>Displays last lines of a file</td>
+</tr>
+<tr>
+<td><code>head</code></td>
+<td>Displays first lines of a file</td>
+</tr>
+<tr>
+<td><code>grep</code></td>
+<td>Prints lines that match patterns</td>
+</tr>
+<tr>
+<td><code>whoami</code></td>
+<td>Outputs username</td>
+</tr>
+<tr>
+<td><code>whatis</code></td>
+<td>Shows single-line descriptions</td>
+</tr>
+<tr>
+<td><code>wc</code></td>
+<td>Word count files</td>
+</tr>
+<tr>
+<td><code>uname</code></td>
+<td>Displays OS information</td>
+</tr>
+<tr>
+<td><code>neofetch</code></td>
+<td>Displays OS and hardware information</td>
+</tr>
+<tr>
+<td><code>find</code></td>
+<td>Searches for files that follow a pattern</td>
+</tr>
+<tr>
+<td><code>wget</code></td>
+<td>Retrieves files from the internet</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><span><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbit.ly%2F3uJASS0&via=kinsta&text=As+of+2020%2C+Linux+was+the+most-used+operating+system+by+professional+developers+%F0%9F%98%B2+Learn+the+40+most-used+commands+and+start+taking+advantage+of+this+powerful+system+with+this+post%F0%9F%9A%80" class="novashare-ctt novashare-ctt-cta-left" target="_blank" rel="nofollow noopener noreferrer"><span class="novashare-ctt-tweet">As of 2020, Linux was the most-used operating system by professional developers 😲 Learn the 40 most-used commands and start taking advantage of this powerful system with this post🚀</span><span class="novashare-ctt-cta-container"><span class="novashare-ctt-cta"><span class="novashare-ctt-cta-text">Click to Tweet</span><span class="novashare-ctt-cta-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></span></span></span></a></span></p>
+<h2>Summary</h2>
+<p>It can take some time to learn Linux, but once you master some of its tools, it becomes your best ally, and you won’t regret choosing it as your daily driver.</p>
+<p>One of the remarkable things about Linux is that even if you’re an experienced user, you’ll never stop learning to be more productive using it.</p>
+<p><em>There are a lot more helpful Linux commands. If we’ve left something out, please share your favorite Linux commands in the comments below!</em>        </p>
+<div class="user-content mt--40 pb--60">
+<hr class="mini-divider">
+<p>
+            Save time, costs and maximize site performance with:</p>
+<ul>
+<li>Instant help from WordPress hosting experts, 24/7.</li>
+<li>Cloudflare Enterprise integration.</li>
+<li>Global audience reach with 31 data centers worldwide.</li>
+<li>Optimization with our built-in Application Performance Monitoring.</li>
+</ul>
+<p>All of that and much more, in one plan with no long-term contracts, assisted migrations, and a 30-day-money-back-guarantee. <a data-track-ga-category="single-post" data-track-ga-label="bottom-cta" href="https://kinsta.com/plans/">Check out our plans</a> or <a data-track-ga-category="single-post" data-track-ga-label="bottom-cta" href="https://kinsta.com/contact-us/">talk to sales</a> to find the plan that’s right for you.        </p>
+</div>	</div>
+</article>
+    <div class="related-posts">
+        <div class="related-posts__inner container">
+            <h2 class="related-posts__title">
+                Hand-picked related articles            </h2>
+
+            <div class="posts-grid related-posts__list">
+<div class="post-preview post-89233 post type-post status-publish format-standard has-post-thumbnail hentry tag-php tag-webdev topic-install-php wl_entity_type-article">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="https://kinsta.com/wp-content/uploads/2021/02/install-php-360x180.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="Install PHP" loading="lazy" srcset="https://kinsta.com/wp-content/uploads/2021/02/install-php-360x180.png 360w, https://kinsta.com/wp-content/uploads/2021/02/install-php-300x150.png 300w, https://kinsta.com/wp-content/uploads/2021/02/install-php-1024x512.png 1024w, https://kinsta.com/wp-content/uploads/2021/02/install-php-768x384.png 768w, https://kinsta.com/wp-content/uploads/2021/02/install-php.png 1460w" sizes="(max-width: 360px) 100vw, 360px" />    </div>
+
+    <div class="post-preview__content">
+        <div class="post-preview__labels">
+            <span class="post-preview__label has-purple-background-color">
+            Blog        </span>
+    </div>
+
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/blog/install-php/">
+        How to Install PHP on Any Server (Linux, macOS, Windows)    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Don&#039;t guess your way through this one. Here, we walk you through how to install PHP on any server with clear step-by-step instructions.    </div>
+<dl class="post-preview__meta">
+            <dt>Reading time</dt>
+        <dd>13 min read</dd>
+            <dt>Publish date</dt>
+        <dd>February 24, 2021</dd>
+    </dl>
+    </div>
+</div>
+
+<div class="post-preview post-67153 post type-post status-publish format-standard has-post-thumbnail hentry tag-ssh tag-webdev topic-wordpress-development wl_entity_type-article">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="https://kinsta.com/wp-content/uploads/2020/03/ssh-commands-360x180.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="SSH commands" loading="lazy" srcset="https://kinsta.com/wp-content/uploads/2020/03/ssh-commands-360x180.png 360w, https://kinsta.com/wp-content/uploads/2020/03/ssh-commands-300x150.png 300w, https://kinsta.com/wp-content/uploads/2020/03/ssh-commands-1024x512.png 1024w, https://kinsta.com/wp-content/uploads/2020/03/ssh-commands-768x384.png 768w, https://kinsta.com/wp-content/uploads/2020/03/ssh-commands.png 1460w" sizes="(max-width: 360px) 100vw, 360px" />    </div>
+
+    <div class="post-preview__content">
+        <div class="post-preview__labels">
+            <span class="post-preview__label has-purple-background-color">
+            Blog        </span>
+    </div>
+
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/blog/ssh-commands/">
+        27 Popular SSH Commands for WordPress Users to Start Using in 2022    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Connecting via SSH is secure, fast, and convenient. Learn the most popular SSH commands for accessing WordPress via SSH and get more work done, fas&hellip;    </div>
+<dl class="post-preview__meta">
+            <dt>Reading time</dt>
+        <dd>22 min read</dd>
+            <dt>Publish date</dt>
+        <dd>April 13, 2020</dd>
+    </dl>
+    </div>
+</div>
+
+<div class="post-preview post-7665 post type-post status-publish format-standard has-post-thumbnail hentry tag-webdev tag-wordpress topic-localhost topic-wordpress-development wl_entity_type-article">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="https://kinsta.com/wp-content/uploads/2020/07/install-wordpress-locally-1-360x180.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="install wordpress locally" loading="lazy" srcset="https://kinsta.com/wp-content/uploads/2020/07/install-wordpress-locally-1-360x180.png 360w, https://kinsta.com/wp-content/uploads/2020/07/install-wordpress-locally-1-300x150.png 300w, https://kinsta.com/wp-content/uploads/2020/07/install-wordpress-locally-1-1024x512.png 1024w, https://kinsta.com/wp-content/uploads/2020/07/install-wordpress-locally-1-768x384.png 768w, https://kinsta.com/wp-content/uploads/2020/07/install-wordpress-locally-1.png 1460w" sizes="(max-width: 360px) 100vw, 360px" />    </div>
+
+    <div class="post-preview__content">
+        <div class="post-preview__labels">
+            <span class="post-preview__label has-purple-background-color">
+            Blog        </span>
+    </div>
+
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/blog/install-wordpress-locally/">
+        How to Install WordPress Locally (Windows, macOS, Linux)    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Sometimes it can be convenient to work on your own machine. Check out how to install WordPress locally using DevKinsta, XAMPP, WAMP, or MAMP.    </div>
+<dl class="post-preview__meta">
+            <dt>Reading time</dt>
+        <dd>30 min read</dd>
+            <dt>Publish date</dt>
+        <dd>July 29, 2020</dd>
+    </dl>
+    </div>
+</div>
+</div>        </div>
+    </div>
+<link rel="stylesheet" href="https://kinsta.com/wp-content/themes/kinsta/dist/templates/comments.css?ver=d256c1d896fa00a2c7308b5230bd8e78" />
+<div class="container container--narrow mt--60">
+    <div class="row">
+        <div class="pb--60 col-xs-12">
+            <div class='row'>
+                <div class='col-xs-12'>
+                    <div class='row nocol between-xs middle-xs mb--40'>
+                        <h3 class='heading--large'>
+                            Comments                        </h3>
+
+                        <div>
+                            <a href="#commentform" class='button--ghost--gray button--small'>
+                                Leave A Comment                            </a>
+                        </div>
+                    </div>
+                                            <ol class="comment-list">
+                                <li class="comment even thread-even depth-1" id="comment-716652">
+                        <div id="div-comment-716652" class="comment-body">
+                                                      <div class='row nocol xs-all-12-centered'>
+        <div class='comment-inner'>
+          <div class="comment-header mb--20">
+            <div class='comment-meta'>
+              <div class='comment-avatar avatar--round mr--10'>
+                <img alt='Gravatar for this comment&#039;s author' src='https://kinsta.com/avatar/eb315b8e92cb3a229839c690f407ffee?s=32&#038;d=mm&#038;r=g' srcset='https://kinsta.com/avatar/eb315b8e92cb3a229839c690f407ffee?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' loading='lazy'/>              </div>
+              <span class="comment-author text--bold pr--10">
+                <span class="comment-author__name">Efren</span>
+                            </span>
+              <span class="comment-date">
+                December 26, 2021 at 9:57 pm              </span>
+            </div>
+            <div class="comment-reply-container">
+            <a rel='nofollow' class='comment-reply-link' href='#comment-716652' data-commentid="716652" data-postid="102301" data-belowelement="div-comment-716652" data-respondelement="respond" data-replyto="Reply to Efren" aria-label='Reply to Efren'>Reply</a>            </div>
+          </div>
+          <div class='comment-content'><p>Muchas gracias, muy util!</p>
+</div>
+        </div>
+      </div>
+
+                </div>
+            </li><!-- #comment-## -->
+                        </ol>
+
+                                            
+                    
+                    	<div id="respond" class="comment-respond">
+		<h3 class="heading--large mb--20">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/linux-commands/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://kinsta.com/wp-comments-post.php" method="post" id="commentform" class="kinsta-form--whitebg kinsta-form" novalidate>  <div class="mt--10 text--small mb--40"><strong>Comment policy:</strong> We love comments and appreciate the time that readers spend to share ideas and give feedback. However, all comments are manually moderated and those deemed to be spam or solely promotional will be deleted.</div>
+        <p class="comment-form-comment"><label for="comment">Comment</label><textarea required="required" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><div class="row gutter--small mt--20"><div class="col-xs-12 col-sm-6"><p class="comment-form-author"><label for="author">Name</label> <input id="author" required="required" name="author" type="text" value="" size="30" /></p></div>
+<div class="col-xs-12 col-sm-6 mb--20"><p class="comment-form-email"><label for="email">Email</label> <input id="email" required="required" name="email" type="email" value="" size="30" /></p></div></div>
+                                <div class="form-control mt--15 terms-checkbox" data-state="neutral">
+  <div class="control-container">
+          <p class="text--normal">By submitting this form: You agree to the processing of the submitted personal data in accordance with Kinsta's <a class="unslidelink--text" target="_blank" href="https://kinsta.com/legal/privacy-policy/">Privacy Policy</a>, including the transfer of data to the United States.</p>
+              <label class="checkbox-label row nocol js-marketing-optin">
+        <span class="checkbox mr--6">
+          <input name="marketing_opt_in" type="checkbox" checked />
+          <span class="indicator"></span>
+        </span>
+                  <p class="text--normal mb--0">You also agree to receive information from Kinsta related to our services, events, and promotions. You may unsubscribe at any time by following the instructions in the communications received.</p>
+              </label>
+      </div>
+</div>
+
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='102301' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9a5b97b4e6" /></p><input type="hidden" id="ak_js" name="ak_js" value="209"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+	                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="site-footer__marketing">
+    <div class="container">
+        <div class="site-footer__newsletter">
+            <a class="featured-g2-badges flex center-xs" href="https://www.g2.com/products/kinsta" rel="noopener noreferrer sponsored" target="_blank" style="flex-wrap: wrap; gap: 2.5%; text-decoration: none;">
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="https://kinsta.com/wp-content/themes/kinsta/images/g2-badges/leader.svg?v=sp2022" alt="Leader G2 award" />
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="https://kinsta.com/wp-content/themes/kinsta/images/g2-badges/sb-best-usability.svg?v=sp2022" alt="Best usability small business G2 award" />
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="https://kinsta.com/wp-content/themes/kinsta/images/g2-badges/sb-easiest-to-use.svg?v=sp2022" alt="Easiest to use small business G2 award" />
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="https://kinsta.com/wp-content/themes/kinsta/images/g2-badges/top-100-fastest-growing-products.svg?v=sp2022" alt="Top 100 fastest growing products G2 award" />
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="https://kinsta.com/wp-content/themes/kinsta/images/g2-badges/users-love-us.svg?v=sp2022" alt="Users love us G2 award" />
+    </a>
+            <h3>Subscribe to our Newsletter</h3>
+            <p>Get premium content from an <a href="https://kinsta.com/kinsta-reviews/">award-winning</a> WordPress hosting platform</p>
+            <a href="#newsletter" data-dialog-src="#newsletter" class="button button--ghost">Subscribe</a>
+        </div>
+        <img  class="site-footer__marketing__illustration" aria-hidden="true" src="https://kinsta.com/wp-content/themes/kinsta/images/footer/foreground.svg" width="538" height="291" loading="lazy" />
+    </div>
+</div>
+<dialog  id="newsletter" class="dialog dialog has-dark-blue-background-color email-modal" aria-hidden="true">
+    <div class="dialog__content">
+        <h2 class="heading--large text--center color--white mb--30">
+            Sign Up For the Newsletter        </h2>
+    <kinsta-form  show-name="false" show-phone="false" show-website="false" show-company="false" show-disk-space="false" show-monthly-visits="false" show-number-of-websites="false" show-message="false" submit-button-text="Sign Up Now" submit-button-text-sending="Signing Up..." success-title="Thanks for subscribing!" success-message="Keep an eye out for our next newsletter." terms-template="newsletter" hubspot-source="subscribe_to_newsletter" submit-button-text-loading="Signing Up"></kinsta-form>
+    </div>
+</dialog>
+
+    <div class="container">
+        <div class="site-footer__language-bar">
+            <div class="site-footer__language-aside">
+            <p><a href="https://my.kinsta.com/login?lang=en">Log in</a> to MyKinsta or take a sneak peek with a <a href="https://kinsta.com/mykinsta/">demo account</a></p>
+        </div>
+    
+            <div class="site-footer__language">
+            <label class="language-select-label"><span class="screen-reader-text">Switch language</span><svg  class="icon icon--language" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#language" /></svg><select class="language-select site-footer__language__options"><option value="https://kinsta.com/de/blog/linux-befehle/">Deutsch</option><option value="https://kinsta.com/blog/linux-commands/" selected='selected'>English</option><option value="https://kinsta.com/es/blog/linux-comandos/">Español</option><option value="https://kinsta.com/fr/blog/commandes-linux/">Français</option><option value="https://kinsta.com/it/blog/comandi-linux/">Italiano</option><option value="https://kinsta.com/nl/blog/linux-opdrachten/">Nederlands</option><option value="https://kinsta.com/pt/blog/comandos-linux/">Português</option></select><svg  class="icon icon--chevron" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#chevron" /></svg></label>        </div>
+    </div>
+<nav class="site-footer__menu"><ul id="menu-footer-menu" class="menu"><li id="menu-item-95015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-95015"><h3 >Kinsta Hosting</h3>
+<ul class="sub-menu">
+	<li id="menu-item-95039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95039"><a href="https://kinsta.com/plans/">Plans</a></li>
+	<li id="menu-item-95025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95025"><a href="https://kinsta.com/features/">Features</a></li>
+	<li id="menu-item-118367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118367"><a href="https://kinsta.com/add-ons/">Add-Ons</a></li>
+	<li id="menu-item-95024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95024"><a href="https://kinsta.com/cloudflare-integration/">Cloudflare Integration</a></li>
+	<li id="menu-item-95028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95028"><a href="https://kinsta.com/apm-tool/">APM Tool</a></li>
+	<li id="menu-item-95029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95029"><a href="https://kinsta.com/devkinsta/">DevKinsta</a></li>
+	<li id="menu-item-95041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95041"><a href="https://kinsta.com/kinsta-support/">Kinsta Support</a></li>
+	<li id="menu-item-95021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95021"><a href="https://kinsta.com/wordpress-migration/">Free Migration</a></li>
+</ul>
+</li>
+<li id="menu-item-95011" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-95011"><h3 >Solutions</h3>
+<ul class="sub-menu">
+	<li id="menu-item-105477" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-105477"><a href="https://kinsta.com/blog/managed-wordpress-hosting/">Managed WordPress Hosting</a></li>
+	<li id="menu-item-107224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107224"><a href="https://kinsta.com/wordpress-hosting/">WordPress Hosting</a></li>
+	<li id="menu-item-95670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95670"><a href="https://kinsta.com/wordpress-hosting-agencies/">Agency Hosting</a></li>
+	<li id="menu-item-95023" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95023"><a href="https://kinsta.com/enterprise-wordpress-hosting/">Enterprise Hosting</a></li>
+	<li id="menu-item-112328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112328"><a href="https://kinsta.com/woocommerce-hosting/">WooCommerce Hosting</a></li>
+	<li id="menu-item-95019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95019"><a href="https://kinsta.com/wordpress-multisite-hosting/">Multisite Hosting</a></li>
+	<li id="menu-item-95018" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95018"><a href="https://kinsta.com/secure-wordpress-hosting/">Secure Hosting</a></li>
+	<li id="menu-item-108115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108115"><a href="https://kinsta.com/wordpress-hosting-publishers/">Hosting for Publishers</a></li>
+</ul>
+</li>
+<li id="menu-item-95012" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-95012"><h3 >Resources</h3>
+<ul class="sub-menu">
+	<li id="menu-item-95030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95030"><a href="https://kinsta.com/resources/">All Resources</a></li>
+	<li id="menu-item-95034" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-95034"><a href="https://kinsta.com/blog/">Blog</a></li>
+	<li id="menu-item-95031" class="menu-item menu-item-type-post_type_archive menu-item-object-knowledgebase menu-item-95031"><a href="https://kinsta.com/knowledgebase/">Knowledge Base</a></li>
+	<li id="menu-item-109761" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109761"><a href="https://kinsta.com/help/">Help Center</a></li>
+	<li id="menu-item-95033" class="menu-item menu-item-type-post_type_archive menu-item-object-feature-updates menu-item-95033"><a href="https://kinsta.com/feature-updates/">Feature Updates</a></li>
+	<li id="menu-item-95036" class="menu-item menu-item-type-post_type_archive menu-item-object-ebook menu-item-95036"><a href="https://kinsta.com/ebooks/">Ebooks</a></li>
+	<li id="menu-item-95038" class="menu-item menu-item-type-post_type_archive menu-item-object-podcast menu-item-95038"><a href="https://kinsta.com/podcast/">Podcast</a></li>
+	<li id="menu-item-102055" class="menu-item menu-item-type-post_type_archive menu-item-object-agency menu-item-102055"><a href="https://kinsta.com/agency-directory/">Agency Directory</a></li>
+	<li id="menu-item-95053" class="menu-item menu-item-type-post_type_archive menu-item-object-affiliate-academy menu-item-95053"><a href="https://kinsta.com/affiliate-academy/">Affiliate Academy</a></li>
+	<li id="menu-item-95058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95058"><a href="https://status.kinsta.com/">System Status</a></li>
+</ul>
+</li>
+<li id="menu-item-95013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-95013"><h3 >Company</h3>
+<ul class="sub-menu">
+	<li id="menu-item-95043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95043"><a href="https://kinsta.com/about-us/">About Us</a></li>
+	<li id="menu-item-95046" class="menu-item menu-item-type-post_type_archive menu-item-object-job menu-item-95046"><a href="https://kinsta.com/careers/">Careers</a></li>
+	<li id="menu-item-95040" class="menu-item menu-item-type-post_type_archive menu-item-object-case_studies menu-item-95040"><a href="https://kinsta.com/clients/">Clients &amp; Case Studies</a></li>
+	<li id="menu-item-95049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95049"><a href="https://kinsta.com/contact-us/">Contact Us</a></li>
+	<li id="menu-item-95042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95042"><a href="/kinsta-reviews/">Kinsta Reviews</a></li>
+	<li id="menu-item-95048" class="menu-item menu-item-type-post_type_archive menu-item-object-partner menu-item-95048"><a href="https://kinsta.com/partners/">Partners</a></li>
+	<li id="menu-item-95047" class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-95047"><a href="https://kinsta.com/press/">Press</a></li>
+	<li id="menu-item-95045" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95045"><a href="https://kinsta.com/why-us/">Why Us</a></li>
+	<li id="menu-item-95054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95054"><a href="https://kinsta.com/affiliates/">Affiliate Program</a></li>
+	<li id="menu-item-95055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95055"><a href="https://affiliate.kinsta.com/?lang=en">Affiliate Dashboard</a></li>
+</ul>
+</li>
+<li id="menu-item-95014" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-95014"><h3 >Compare Kinsta</h3>
+<ul class="sub-menu">
+	<li id="menu-item-97403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97403"><a href="https://kinsta.com/wp-engine-alternative/">Kinsta vs WP Engine</a></li>
+	<li id="menu-item-101280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101280"><a href="https://kinsta.com/siteground-alternative/">Kinsta vs SiteGround</a></li>
+	<li id="menu-item-97734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97734"><a href="https://kinsta.com/flywheel-hosting-alternative/">Kinsta vs Flywheel</a></li>
+	<li id="menu-item-99029" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99029"><a href="/kinsta-alternatives/">More Comparisons</a></li>
+</ul>
+</li>
+</ul></nav>
+<div class="site-footer__company">
+    <div class='site-footer__logo'>
+        <svg  class="icon icon--logo" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#logo" /></svg>    </div>
+    <p class="site-footer__legal">
+        <small>&copy; 2022 Kinsta Inc. All rights reserved.</small>
+        <small>Kinsta&reg; and WordPress&reg; are registered trademarks.</small>
+        <small><a href="https://kinsta.com/legal/">Legal information.</a></small>
+    </p>
+
+    <nav class="site-footer__social">
+        <ul>
+            <li><a class="site-footer__social__link" href="https://www.linkedin.com/company/kinsta/" target="_blank" rel="noopener noreferrer"><svg  class="icon icon--linkedin" aria-hidden="true" focusable="false" title="Kinsta on LinkedIn"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#linkedin" /></svg><span class="screen-reader-text">Kinsta on LinkedIn</span></a></li>
+            <li><a class="site-footer__social__link" href="https://www.facebook.com/kinstahosting" target="_blank" rel="noopener noreferrer"><svg  class="icon icon--facebook" aria-hidden="true" focusable="false" title="Kinsta on Facebook"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#facebook" /></svg><span class="screen-reader-text">Kinsta on Facebook</span></a></li>
+            <li><a class="site-footer__social__link" href="https://twitter.com/kinsta" target="_blank" rel="noopener noreferrer"><svg  class="icon icon--twitter" aria-hidden="true" focusable="false" title="Kinsta on Twitter"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#twitter" /></svg><span class="screen-reader-text">Kinsta on Twitter</span></a></li>
+            <li><a class="site-footer__social__link" href="https://www.instagram.com/kinstahosting/" target="_blank" rel="noopener noreferrer"><svg  class="icon icon--instagram" aria-hidden="true" focusable="false" title="Kinsta on Instagram"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#instagram" /></svg><span class="screen-reader-text">Kinsta on Instagram</span></a></li>
+            <li><a class="site-footer__social__link" href="https://www.youtube.com/kinsta" target="_blank" rel="noopener noreferrer"><svg  class="icon icon--youtube" aria-hidden="true" focusable="false" title="Kinsta on YouTube"><use xlink:href="https://kinsta.com/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#youtube" /></svg><span class="screen-reader-text">Kinsta on YouTube</span></a></li>
+        </ul>
+    </nav>
+</div>
+    </div>
+</footer>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/jquery/jquery.form.min.js?ver=4.3.0' id='jquery-form-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='kinsta-js-main-js-extra'>
+/* <![CDATA[ */
+var kinsta = {"ajaxurl":"https:\/\/kinsta.com\/wp-admin\/admin-ajax.php","apiUrl":"https:\/\/kinsta.com\/wp-json\/","kinstanonce":"dafce75c66","stripe_public_key":"pk_live_r16EiSaRITiPDMKQjLeoOviT","sentry_key":null,"env":"production","chevronRight":"<svg  class=\"icon icon--chevron color--purple\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"https:\/\/kinsta.com\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#chevron\" \/><\/svg>","chevronLeft":"<svg  class=\"icon icon--chevron color--purple icon--reverse\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"https:\/\/kinsta.com\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#chevron\" \/><\/svg>","check_m":"<svg  class=\"icon icon--check color--purple\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"https:\/\/kinsta.com\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#check\" \/><\/svg>","translations":{"thanksForSubscribing":"Thanks for subscribing!","validationRequired":"Please fill out this field","validationEmail":"Please provide a valid email address","validationPassword":"Password must contain a min. of 6 characters, at least one lowercase and capital letter, and a number","validationDuplicate":"The two fields do not match","validationVatInvalidCountry":"The country code of your VAT number does not match your selected country","validationVatInvalidFormat":"The entered VAT number is invalid","validationVatInvalidVies":"The entered VAT number could not be verified by the EU VIES system","validationCard":"Your card details are incorrect","validationFreeEmail":"Email already in use"},"svg_sprite":"https:\/\/kinsta.com\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97","urls":{"api":"https:\/\/kinsta.com\/wp-json\/","ajax":"https:\/\/kinsta.com\/wp-admin\/admin-ajax.php","terms":"https:\/\/kinsta.com\/legal\/terms-service\/","privacy":"https:\/\/kinsta.com\/legal\/privacy-policy\/","home":"https:\/\/kinsta.com\/","theme":"https:\/\/kinsta.com\/wp-content\/themes\/kinsta","cookieSettings":"https:\/\/kinsta.com\/cookie-settings\/"},"contact_terms_html":"<div class=\"form-control mt--15 terms-checkbox\" data-state=\"neutral\">\n  <div class=\"control-container\">\n          <p class=\"text--normal\">By submitting this form: You agree to the processing of the submitted personal data in accordance with Kinsta's <a class=\"unslidelink--text\" target=\"_blank\" href=\"https:\/\/kinsta.com\/legal\/privacy-policy\/\">Privacy Policy<\/a>, including the transfer of data to the United States.<\/p>\n              <label class=\"checkbox-label row nocol js-marketing-optin\">\n        <span class=\"checkbox mr--6\">\n          <input name=\"marketing_opt_in\" type=\"checkbox\" checked \/>\n          <span class=\"indicator\"><\/span>\n        <\/span>\n                  <p class=\"text--normal mb--0\">You also agree to receive information from Kinsta related to our services, events, and promotions. You may unsubscribe at any time by following the instructions in the communications received.<\/p>\n              <\/label>\n      <\/div>\n<\/div>\n","maintenanceMode":"","timeFormat":"g:i a","dateFormat":"F j, Y","defaultPlan":"visits-business1","globalNotification":{"type":"webinar","theme":"default--darkbg","title":"DevKinsta Webinar","text":"Learn how DevKinsta can improve your development workflow!","illustration":null,"backgroundImage":"https:\/\/kinsta.com\/wp-content\/uploads\/2021\/08\/global-notification-background-devkinsta.svg","hash":"22c58f3c44153593b63ffb70c8921a31","ctaLink":"https:\/\/kinsta.com\/webinars\/install-and-use-devkinsta\/","ctaText":"Register Now"}};
+var kinstaVatRates = {"AT":"0.2","BE":"0.21","BG":"0.2","HR":"0.25","CY":"0.19","CZ":"0.21","DK":"0.25","EE":"0.2","FI":"0.24","FR":"0.2","DE":"0.19","GR":"0.24","HU":"0.27","IE":"0.23","IT":"0.22","LV":"0.21","LT":"0.21","LU":"0.17","MT":"0.18","NL":"0.21","PL":"0.23","PT":"0.23","RO":"0.19","SK":"0.2","SI":"0.22","ES":"0.21","SE":"0.25","GB":"0.2"};
+var kinstaFloatingContactText = {"termsHtml":"<div class=\"form-control mt--15 terms-checkbox\" data-state=\"neutral\">\n  <div class=\"control-container\">\n          <p class=\"text--normal\">By submitting this form: You agree to the processing of the submitted personal data in accordance with Kinsta's <a class=\"unslidelink--text\" target=\"_blank\" href=\"https:\/\/kinsta.com\/legal\/privacy-policy\/\">Privacy Policy<\/a>, including the transfer of data to the United States.<\/p>\n              <label class=\"checkbox-label row nocol js-marketing-optin\">\n        <span class=\"checkbox mr--6\">\n          <input name=\"marketing_opt_in\" type=\"checkbox\" checked \/>\n          <span class=\"indicator\"><\/span>\n        <\/span>\n                  <p class=\"text--normal mb--0\">You also agree to receive information from Kinsta related to our services, events, and promotions. You may unsubscribe at any time by following the instructions in the communications received.<\/p>\n              <\/label>\n      <\/div>\n<\/div>\n"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='kinsta-js-main-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "kinsta-theme", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' id='kinsta-js-main-js-before'>
+var singularState = {"postId":102301,"postSlug":"linux-commands","postType":"post","languages":["it","pt","fr","de","nl","es"],"currentLanguage":"en"}
+var kinstaContactFormState = {"userId":102301,"userAge":1651960878,"recentPosts":[{"title":"What Is an Email Header? How to Read Them and Why You Should","thumbnail":"https:\/\/kinsta.com\/wp-content\/uploads\/2022\/04\/email-header-360x180.png","permalink":"https:\/\/kinsta.com\/blog\/email-header\/"},{"title":"What's New in WordPress 6.0: New Blocks, Style Switching, Template Editing, Webfonts API, and Much More","thumbnail":"https:\/\/kinsta.com\/wp-content\/uploads\/2022\/05\/whats-new-in-wordpress-6.0-360x180.png","permalink":"https:\/\/kinsta.com\/blog\/wordpress-6-0\/"}],"nonce":"617fe6412c","isEnabled":true,"isFloatingEnabled":true,"isContactFormPage":false}
+var siteState = {"adminAjaxUrl":"https:\/\/kinsta.com\/wp-admin\/admin-ajax.php","restBaseUrl":"https:\/\/kinsta.com\/wp-json\/kinsta\/v1","restNonce":"617fe6412c","siteEnv":"production"}
+</script>
+<script type='text/javascript' src='https://kinsta.com/wp-content/themes/kinsta/dist/main.js?ver=168491f3f4eb5e2d2edde66fcf60c115' id='kinsta-js-main-js'></script>
+<script type='text/javascript' id='wordlift-js-extra'>
+/* <![CDATA[ */
+var wlSettings = {"ajaxUrl":"https:\/\/kinsta.com\/wp-admin\/admin-ajax.php","apiUrl":"https:\/\/kinsta.com\/wl-api\/","jsonld_url":"https:\/\/kinsta.com\/wp-json\/wordlift\/v1\/jsonld\/","postId":"102301","jsonld_enabled":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://kinsta.com/wp-content/plugins/wordlift/js/dist/bundle.js?ver=3.32.6' id='wordlift-js'></script>
+<script type='text/javascript' id='wordlift-cloud-js-extra'>
+/* <![CDATA[ */
+var _wlCloudSettings = {"selector":"a.wl-entity-page-link","url":"https:\/\/kinsta.com\/wp-json\/wordlift\/v1\/jsonld"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer="defer" src='https://kinsta.com/wp-content/plugins/wordlift/js/dist/wordlift-cloud.js?ver=3.32.6' id='wordlift-cloud-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-includes/js/wp-embed.min.js?ver=5.8.4' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://kinsta.com/wp-content/plugins/novashare/inc/../js/novashare.min.js?ver=1.2.1' id='novashare-js-js'></script>
+<script defer type='text/javascript' src='https://kinsta.com/wp-content/plugins/akismet/_inc/form.js?ver=4.1.12' id='akismet-form-js'></script>
+</body>
+</html>

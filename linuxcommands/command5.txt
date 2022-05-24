@@ -1,0 +1,35 @@
+User level thread.	
+Kernel level thread.
+User thread are implemented by users.	
+kernel threads are implemented by OS.
+OS doesn’t recognize user level threads.	
+Kernel threads are recognized by OS.
+Implementation of User threads is easy.	
+Implementation of Kernel thread is complicated.
+Context switch time is less.	
+Context switch time is more.
+Context switch requires no hardware support.	
+Hardware support is needed.
+If one user level thread perform blocking operation then entire process will be blocked.	
+User Mode: When a Program is booted up on an Operating system let’s say windows, then it launches the program in user mode. 
+And when a user-mode program requests to run, a process and virtual address space (address space for that process) is created for it by windows. 
+User-mode programs are less privileged that is user-mode applications are not allowed to access the system resources directly. 
+For instance, if an application under user-mode wants to access system resources, it will have to first go through the Operating system kernel by using syscalls. 
+Kernel Mode: The kernel is the core program on which all the other operating system components rely, it is used to access the hardware components and schedule which processes should run on a computer. System and when, and it also manages the application software and hardware interaction. 
+Hence it is the most privileged program, unlike other programs it can directly interact with the hardware.
+When programs running under user mode need hardware access for example like webcam, then first it has to go through the kernel by using a syscall, and to carry out these requests the CPU switches.
+From user mode to kernel mode at the time of execution. 
+After finally completing the execution of the process the CPU again switches back to the user mode.
+User vs Kernel Mode.
+Difference Between Kernel mode and User mode:
+Criteria
+Kernel Mode
+User Mode
+Kernel-mode vs User mode	
+In kernel mode, the program has direct and unrestricted access to system resources.	
+In user mode, the application program executes and starts out.
+Interruptions	
+In Kernel mode, the whole operating system might go down if an interrupt occurs	In user mode, a single process fails if an interrupt occurs.  
+Modes
+Kernel mode is also known as the master mode, privileged mode, or system mode.	
+User mode is also knownIf one kernel thread perform blocking operation then another thread can continue execution.

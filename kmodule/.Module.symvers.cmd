@@ -1,0 +1,1 @@
+cmd_/home/kanaka/Desktop/kmodule/Module.symvers := sed 's/\.ko$$/\.o/' /home/kanaka/Desktop/kmodule/modules.order | scripts/mod/modpost -m -a  -o /home/kanaka/Desktop/kmodule/Module.symvers -e -i Module.symvers   -T -

@@ -1,0 +1,4 @@
+Hii
+Welcome to linux_unix commands
+Basic commands of linux_unix
+Linux everything is a file.
